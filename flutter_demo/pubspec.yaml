@@ -19,4 +19,4 @@ dev_dependencies:
 flutter:
   uses-material-design: true
   assets:
-    - images/Android_Studio.png
+    - images/
