@@ -4,96 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="00fcc8e2-9d06-4a50-b9c4-3b5373519885" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/markdown.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CHANGELOG.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/analysis_options.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/abstract_class.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/animal.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/args_method_demo.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/async_demo.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/cache_demo.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/dart_learning.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/duotai_demo.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/extends_demo.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/fuction_args_demo.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/generic_class_demo.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/generic_method_demo.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/import_custom_lib.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/import_lib.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/import_sys_lib.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/interface_cache.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/interface_demo.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/mixin_demo.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/my_data.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/null_safety_demo.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/oop_demo.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/override_demo.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/person.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/scope_bibao_demo.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/static_demo.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/sum_demo.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/super_demo.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dart_learning.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/dart_datatype.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/dart_expression.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/dart_learning.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/dart_list.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/dart_variables.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/dart_learning_test.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../flutter_demo/images/balls/ball1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../flutter_demo/images/balls/ball2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../flutter_demo/images/balls/ball3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../flutter_demo/images/balls/ball4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../flutter_demo/images/characters/boo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../flutter_demo/images/characters/broly.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../flutter_demo/images/characters/cell.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../flutter_demo/images/characters/frieza.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../flutter_demo/images/characters/gohan.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../flutter_demo/images/characters/goku.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../flutter_demo/images/characters/vegeta.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../flutter_demo/images/credit_cards/chip.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../flutter_demo/images/credit_cards/chip_logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../flutter_demo/images/dash_dart.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../flutter_demo/images/dash_dart_dark.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../flutter_demo/images/mario_logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../flutter_demo/images/mesi.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../flutter_demo/images/plant1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../flutter_demo/images/plant2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../flutter_demo/images/plant3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../flutter_demo/images/shoes/1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../flutter_demo/images/shoes/2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../flutter_demo/images/shoes/3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../flutter_demo/images/shoes/4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../flutter_demo/images/twitter_flutter_bg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../flutter_demo/images/twitter_flutter_logo.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../flutter_demo/ios/Podfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../flutter_demo/lib/list_detail/character.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../flutter_demo/lib/sample/my_custom_appbar_page.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../flutter_demo/macos/Podfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../flutter_demo/ios/Flutter/Debug.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/../flutter_demo/ios/Flutter/Debug.xcconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../flutter_demo/ios/Flutter/Release.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/../flutter_demo/ios/Flutter/Release.xcconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../flutter_demo/lib/bottom/category_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../flutter_demo/lib/bottom/category_page.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../flutter_demo/lib/bottom/sample_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../flutter_demo/lib/bottom/sample_page.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../flutter_demo/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../flutter_demo/lib/main.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../flutter_demo/lib/page/plant_shop.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../flutter_demo/lib/page/plant_shop.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../flutter_demo/macos/Flutter/Flutter-Debug.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/../flutter_demo/macos/Flutter/Flutter-Debug.xcconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../flutter_demo/macos/Flutter/Flutter-Release.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/../flutter_demo/macos/Flutter/Flutter-Release.xcconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../flutter_demo/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../flutter_demo/pubspec.yaml" afterDir="false" />
-    </list>
+    <list default="true" id="00fcc8e2-9d06-4a50-b9c4-3b5373519885" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -206,7 +117,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1656233268016</updated>
-      <workItem from="1656233273599" duration="15070000" />
+      <workItem from="1656233273599" duration="15369000" />
     </task>
     <servers />
   </component>

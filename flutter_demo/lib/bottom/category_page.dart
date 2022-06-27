@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_demo/page/stateful_page.dart';
-import 'package:flutter_demo/page/stateless_page.dart';
+import 'package:flutter_demo/page/stateful_widget_page.dart';
+import 'package:flutter_demo/page/stateless_widget_page.dart';
 
 class CategoryPage extends StatefulWidget {
   const CategoryPage({Key? key}) : super(key: key);
@@ -13,8 +13,8 @@ class CategoryPage extends StatefulWidget {
 class _CategoryPageState extends State with SingleTickerProviderStateMixin {
   final tabs = ['无状态', '有状态', '单渲染', '多渲染', '可折叠', '可寄居', '未分类'];
   final tabPages = [
-    const StatelessPage(),
-    const StatefulPage(),
+    const StatelessWidgetPage(),
+    const StatefulWidgetPage(),
     Container(),
     Container(),
     Container(),

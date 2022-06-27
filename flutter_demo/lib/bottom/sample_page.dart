@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_demo/widget/hot_widget.dart';
+import 'package:flutter_demo/widget/custom/hot_widget.dart';
 
 class SamplePage extends StatefulWidget {
   const SamplePage({Key? key}) : super(key: key);

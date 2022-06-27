@@ -19,8 +19,30 @@ class TextWidget extends StatelessWidget {
       body: Container(
         padding: const EdgeInsets.all(12.0),
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
+            const Text(
+              '文本组件',
+              style: TextStyle(
+                fontSize: 22,
+                color: Colors.purpleAccent,
+              ),
+            ),
             Container(
+              margin: const EdgeInsets.symmetric(
+                vertical: 5.0,
+              ),
+              child: const Text(
+                '用于容纳单个子组件的容器组件,拥有的属性非常多，足够满足适应需求，核心样式由style属性控制。',
+                style: TextStyle(
+                  fontSize: 18,
+                ),
+              ),
+            ),
+            Container(
+              margin: const EdgeInsets.symmetric(
+                vertical: 10.0,
+              ),
               color: Colors.indigo.withAlpha(70),
               child: Wrap(
                   spacing: 10,
@@ -39,6 +61,9 @@ class TextWidget extends StatelessWidget {
                       .toList()),
             ),
             Container(
+              margin: const EdgeInsets.symmetric(
+                vertical: 10.0,
+              ),
               height: 120,
               color: Colors.black87,
               alignment: Alignment.center,
