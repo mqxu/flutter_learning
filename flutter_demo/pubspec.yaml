@@ -20,7 +20,3 @@ flutter:
   uses-material-design: true
   assets:
     - images/
-    - images/characters/
-    - images/balls/
-    - images/shoes/
-    - images/credit_cards/
