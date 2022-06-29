@@ -19,6 +19,7 @@ import 'package:flutter_demo/widget/stateless/pageview_widget.dart';
 import 'package:flutter_demo/widget/stateless/singlechildscrollview_widget.dart';
 import 'package:flutter_demo/widget/stateless/text_widget.dart';
 import 'package:flutter_demo/widget/stateless/theme_widget.dart';
+import 'package:flutter_demo/widget/stateless/useraccountdrawerheader_widget.dart';
 
 Map<String, Widget Function(BuildContext)> routes = {
   '/index': (context) => const Index(),
@@ -38,6 +39,8 @@ Map<String, Widget Function(BuildContext)> routes = {
   '/actionchip': (context) => const ActionChipWidget(),
   '/theme': (context) => const ThemeWidget(),
   '/gesturedetector': (context) => const GestureDetectorWidget(),
+  '/useraccountdrawerheader': (context) =>
+      const UserAccountDrawerHeaderWidget(),
   // 有状态组件导航
   '/image': (context) => const ImageWidget(),
   '/sliverappbar': (context) => const SliverAppBarWidget(),

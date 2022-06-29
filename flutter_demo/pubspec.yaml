@@ -20,3 +20,5 @@ flutter:
   uses-material-design: true
   assets:
     - images/
+    - images/bg1.jpg
+    - images/avatar.jpg

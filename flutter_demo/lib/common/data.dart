@@ -49,6 +49,10 @@ final statelessList = <ContainerInfo>[
       'Theme', '可通过Theme.of获取ThemeData对象，也可以指定主题应用于Theme的后代组件', '/theme'),
   ContainerInfo('GestureDetector', '组件手势事件的检测器，可接受长按、双击、按下、松开、移动等事件，并可获取触点信息',
       '/gesturedetector'),
+  ContainerInfo(
+      'UserAccountDrawerHeader',
+      'Flutter提供的一个通用展示结构，相应位置可插入组件，很方便地对特定条目，常用于Drawer中',
+      '/useraccountdrawerheader'),
 ];
 
 final statefulList = <ContainerInfo>[
