@@ -6,6 +6,12 @@ const titleStyle = TextStyle(
   fontWeight: FontWeight.bold,
 );
 
+const titleLightStyle = TextStyle(
+  fontSize: 22,
+  color: Colors.white,
+  fontWeight: FontWeight.bold,
+);
+
 const subTitleStyle = TextStyle(
   fontSize: 20,
   color: Colors.black87,
