@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_demo/bottom/category_page.dart';
 import 'package:flutter_demo/bottom/index.dart';
+import 'package:flutter_demo/bottom/sample_page.dart';
 import 'package:flutter_demo/sample/plant_shop.dart';
 import 'package:flutter_demo/sample/timeline_page.dart';
 import 'package:flutter_demo/widget/stateful/image_widget.dart';
@@ -36,6 +38,8 @@ import 'package:flutter_demo/widget/stateless/visiblity_widget.dart';
 
 Map<String, Widget Function(BuildContext)> routes = {
   '/index': (context) => const Index(),
+  '/category': (context) => const CategoryPage(),
+  '/sample': (context) => const SamplePage(),
   // 无状态组件导航
   '/container': (context) => const ContainerWidget(),
   '/text': (context) => const TextWidget(),

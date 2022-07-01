@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_demo/bottom/category_page.dart';
 import 'package:flutter_demo/bottom/home_page.dart';
 import 'package:flutter_demo/bottom/sample_page.dart';
 
@@ -16,41 +15,43 @@ class _IndexState extends State<Index> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.purple.withAlpha(22),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () => {Navigator.pushNamed(context, '/category')},
+        child: const Icon(Icons.category),
+      ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       body: IndexedStack(
         index: _currentIndex,
         children: const [
           HomePage(),
-          CategoryPage(),
+          // CategoryPage(),
           SamplePage(),
         ],
       ),
       bottomNavigationBar: BottomNavigationBar(
-          currentIndex: _currentIndex,
-          items: const [
-            BottomNavigationBarItem(
-              icon: Icon(
-                Icons.home,
-              ),
-              label: '首页',
+        elevation: 3,
+        currentIndex: _currentIndex,
+        items: const [
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.home,
             ),
-            BottomNavigationBarItem(
-              icon: Icon(
-                Icons.category,
-              ),
-              label: '分类',
+            label: '首页',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.book,
             ),
-            BottomNavigationBarItem(
-              icon: Icon(
-                Icons.book,
-              ),
-              label: '样例',
-            ),
-          ],
-          onTap: (index) {
-            setState(() {
-              _currentIndex = index;
-            });
-          }),
+            label: '样例',
+          ),
+        ],
+        onTap: (index) {
+          setState(() {
+            _currentIndex = index;
+          });
+        },
+      ),
     );
   }
 }
