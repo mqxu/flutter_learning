@@ -15,7 +15,7 @@ class _GestureDetectorWidgetState extends State<GestureDetectorWidget> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('GestureDetector组件'),
+        title: const Text('GestureDetector'),
       ),
       body: Container(
         padding: const EdgeInsets.all(

@@ -15,7 +15,7 @@ class _InputChipWidgetState extends State<InputChipWidget> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('InputChip组件'),
+        title: const Text('InputChip'),
       ),
       body: Container(
         padding: const EdgeInsets.all(

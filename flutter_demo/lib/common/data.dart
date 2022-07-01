@@ -54,9 +54,39 @@ final statelessList = <ContainerInfo>[
       'Flutter提供的一个通用展示结构，相应位置可插入组件，很方便地对特定条目，常用于Drawer中',
       '/useraccountdrawerheader'),
   ContainerInfo('ButtonWidget', '各类Button组件', '/button'),
-  ContainerInfo('CardWidget', '卡片组件，基于Material组件实现，用于将单个组件卡片化。', '/card'),
+  ContainerInfo('CardWidget',
+      '卡片组件，基于Material组件实现，用于将单个组件卡片化，并使其具有投影效果，可加外边距，也可自定义卡片形状。', '/card'),
+  ContainerInfo('VisiblityWidget',
+      '显隐组件，控制一个组件显示或隐藏，可设置隐藏后的占位组件，与其功能类似的组件还有OffStage。', '/visiblity'),
+  ContainerInfo('ListTile',
+      'Flutter提供的一个通用列表条目结构，为左中右结构。相应位置可插入组件，可以很方便地应对特定的条目。', '/listtile'),
   ContainerInfo(
-      'VisiblityWidget', '显隐组件，控制一个组件显示或隐藏，可设置隐藏后的占位组件。', '/visiblity'),
+      'CheckboxListTile',
+      'Flutter提供的一个通用列表条目结构，为左中结构，尾部是一个CheckBox。相应位置可插入组件，可以很方便地应对特定的条目。',
+      '/checkboxlisttile'),
+  ContainerInfo(
+      'SwitchListTile',
+      'Flutter提供的一个通用列表条目结构，为左中结构，尾部是一个Switch。相应位置可插入组件，可以很方便地应对特定的条目。',
+      '/switchlisttile'),
+  ContainerInfo(
+      'RadioListTile',
+      'Flutter提供的一个通用列表条目结构，为左中结构，尾部是一个Radio。相应位置可插入组件，可以很方便地应对特定的条目。',
+      '/radiolisttile'),
+  ContainerInfo(
+      'GridTile', 'Flutter提供的一个通用列表条目结构，可指定头、尾、子组件，常用于网格列表。', '/gridtile'),
+  ContainerInfo('AboutListTile',
+      '一个点击条目，点击时可以弹出应用相关信息，可指定应用图标、应用名、应用版本号等信息和内部的子组件列表。', '/aboutlisttile'),
+  // ContainerInfo('DataTable', '表格组件，可以指定点击、修改、排序等操作。', '/datatable'),
+  ContainerInfo(
+      'Spacer',
+      '只能用于Row、Column和Flex布局中，可利用剩余空间进行占位，使用flex属性可以给多个Spacer按比例分配空间。',
+      '/spacer'),
+  // ContainerInfo(
+  //     'AnimatedIcon',
+  //     '使用AnimatedIcon的图标数据，可以根据一个动画控制器来使图标获得动画效果，可指定图标的大小、颜色等。',
+  //     '/animatedicon'),
+  ContainerInfo('AlertDialog',
+      '一个通用的对话框结构，可指定头、中、尾处的组件。拥有标题、内容的文字样式和边距、影深、形状等属性。', '/alertdialog'),
 ];
 
 final statefulList = <ContainerInfo>[

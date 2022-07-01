@@ -8,7 +8,7 @@ class ContainerWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Container组件'),
+        title: const Text('Container'),
       ),
       body: Container(
         padding: const EdgeInsets.all(

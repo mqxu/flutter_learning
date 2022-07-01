@@ -15,7 +15,7 @@ class TextWidget extends StatelessWidget {
     );
     return Scaffold(
       appBar: AppBar(
-        title: const Text('文本组件'),
+        title: const Text('Text'),
       ),
       body: Container(
         padding: const EdgeInsets.all(12.0),

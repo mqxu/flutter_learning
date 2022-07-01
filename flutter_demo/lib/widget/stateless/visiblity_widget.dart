@@ -17,11 +17,9 @@ class VisiblityWidget extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
-              Container(
-                child: const Text(
-                  '显隐组件',
-                  style: titleStyle,
-                ),
+              const Text(
+                '显隐组件',
+                style: titleStyle,
               ),
               const Text(
                 '显隐组件，控制一个组件显示或隐藏，可设置隐藏后的占位组件。',

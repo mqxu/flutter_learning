@@ -8,7 +8,7 @@ class ChipWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Chip组件'),
+        title: const Text('Chip'),
       ),
       body: Container(
         padding: const EdgeInsets.all(

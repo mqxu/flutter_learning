@@ -9,7 +9,7 @@ class ListViewWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('ListView组件'),
+        title: const Text('ListView'),
       ),
       body: Container(
         padding: const EdgeInsets.all(12.0),

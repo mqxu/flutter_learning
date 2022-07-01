@@ -23,7 +23,7 @@ class ImageWidget extends StatelessWidget {
     ];
     return Scaffold(
       appBar: AppBar(
-        title: const Text('图片组件'),
+        title: const Text('Image'),
       ),
       body: Container(
         padding: const EdgeInsets.all(12.0),

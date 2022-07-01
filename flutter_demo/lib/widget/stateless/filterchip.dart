@@ -20,7 +20,7 @@ class _FilterChipWidgetState extends State<FilterChipWidget> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('FilterChip组件'),
+        title: const Text('FilterChip'),
       ),
       body: Container(
         padding: const EdgeInsets.all(

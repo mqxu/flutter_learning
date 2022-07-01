@@ -9,7 +9,7 @@ class PageViewWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('PageViewWidget'),
+        title: const Text('PageView'),
       ),
       body: Container(
         padding: const EdgeInsets.all(

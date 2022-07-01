@@ -11,7 +11,7 @@ class GridViewWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('GridViewWidget组件'),
+        title: const Text('GridView'),
       ),
       body: Container(
         padding: const EdgeInsets.all(12.0),

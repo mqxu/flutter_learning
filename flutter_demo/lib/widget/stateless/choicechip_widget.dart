@@ -15,7 +15,7 @@ class _ChoiceChipWidgetState extends State<ChoiceChipWidget> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('ChoiceChip组件'),
+        title: const Text('ChoiceChip'),
       ),
       body: Container(
         padding: const EdgeInsets.all(

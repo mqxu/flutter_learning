@@ -24,7 +24,7 @@ class ThemeWidget extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Theme组件'),
+        title: const Text('Theme'),
       ),
       body: Container(
         padding: const EdgeInsets.all(10),
