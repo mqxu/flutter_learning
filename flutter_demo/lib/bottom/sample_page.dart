@@ -69,14 +69,14 @@ class _SamplePageState extends State<SamplePage> {
         height: 100.0,
         color: Colors.cyan,
         title: '音乐播放器样例',
-        url: '/play-music',
+        url: '/musicplayer',
       ),
       Info(
         width: 400.0,
         height: 100.0,
         color: Colors.blue,
-        title: '导航翻转效果样例',
-        url: '/navigator-inverse',
+        title: 'demo样例',
+        url: '/demo',
       ),
       Info(
         width: 400.0,

@@ -76,15 +76,10 @@ final statelessList = <ContainerInfo>[
       'GridTile', 'Flutter提供的一个通用列表条目结构，可指定头、尾、子组件，常用于网格列表。', '/gridtile'),
   ContainerInfo('AboutListTile',
       '一个点击条目，点击时可以弹出应用相关信息，可指定应用图标、应用名、应用版本号等信息和内部的子组件列表。', '/aboutlisttile'),
-  // ContainerInfo('DataTable', '表格组件，可以指定点击、修改、排序等操作。', '/datatable'),
   ContainerInfo(
       'Spacer',
       '只能用于Row、Column和Flex布局中，可利用剩余空间进行占位，使用flex属性可以给多个Spacer按比例分配空间。',
       '/spacer'),
-  // ContainerInfo(
-  //     'AnimatedIcon',
-  //     '使用AnimatedIcon的图标数据，可以根据一个动画控制器来使图标获得动画效果，可指定图标的大小、颜色等。',
-  //     '/animatedicon'),
   ContainerInfo('AlertDialog',
       '一个通用的对话框结构，可指定头、中、尾处的组件。拥有标题、内容的文字样式和边距、影深、形状等属性。', '/alertdialog'),
 ];
@@ -94,4 +89,5 @@ final statefulList = <ContainerInfo>[
       'Image', '用于显示一张图片，可以从文件、内存、网络、资源里加载，可以指定适应方式、样式、颜色混合模式、重复模式。', '/image'),
   ContainerInfo(
       'SliverAppBar', 'SliverAppBar组件可以实现页面头部区域展开、折叠的效果。', '/sliverappbar'),
+  ContainerInfo('CustomBottomAppBar', '自定义底部tab bar。', '/custombottomappbar'),
 ];

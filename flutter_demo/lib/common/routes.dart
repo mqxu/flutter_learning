@@ -1,9 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_demo/bottom/add_page.dart';
 import 'package:flutter_demo/bottom/category_page.dart';
+import 'package:flutter_demo/bottom/favorite_page.dart';
 import 'package:flutter_demo/bottom/index.dart';
 import 'package:flutter_demo/bottom/sample_page.dart';
+import 'package:flutter_demo/sample/demo_page.dart';
 import 'package:flutter_demo/sample/plant_shop.dart';
 import 'package:flutter_demo/sample/timeline_page.dart';
+import 'package:flutter_demo/widget/stateful/custom_bottomappbar.dart';
 import 'package:flutter_demo/widget/stateful/image_widget.dart';
 import 'package:flutter_demo/widget/stateful/pageviewcontrol.dart';
 import 'package:flutter_demo/widget/stateful/sliverappbar_widget.dart';
@@ -39,7 +43,9 @@ import 'package:flutter_demo/widget/stateless/visiblity_widget.dart';
 Map<String, Widget Function(BuildContext)> routes = {
   '/index': (context) => const Index(),
   '/category': (context) => const CategoryPage(),
+  '/favorite': (context) => const FavoritePage(),
   '/sample': (context) => const SamplePage(),
+  '/add': (context) => const AddPage(),
   // 无状态组件导航
   '/container': (context) => const ContainerWidget(),
   '/text': (context) => const TextWidget(),
@@ -74,7 +80,9 @@ Map<String, Widget Function(BuildContext)> routes = {
   // 有状态组件导航
   '/image': (context) => const ImageWidget(),
   '/sliverappbar': (context) => const SliverAppBarWidget(),
+  '/custombottomappbar': (context) => const CustomBottomAppBar(),
   // 示例导航
   '/plant-shop': (context) => const PlantShop(),
   '/timeline': (context) => const TimelinePage(),
+  '/demo': (context) => const DemoPage(),
 };

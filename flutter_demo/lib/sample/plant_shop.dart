@@ -37,83 +37,6 @@ class PlantShop extends StatelessWidget {
     );
   }
 
-  // 构建顶部Header
-  Container _buildHeader() {
-    // banner中的字体样式
-    const style = TextStyle(
-      color: Colors.white,
-      fontSize: 32,
-      fontWeight: FontWeight.bold,
-    );
-    return Container(
-      padding: const EdgeInsets.only(
-        bottom: 50,
-      ),
-      height: 160,
-      decoration: const BoxDecoration(
-        color: greenColor,
-        borderRadius: BorderRadius.only(
-          bottomLeft: Radius.circular(40),
-          bottomRight: Radius.circular(40),
-        ),
-      ),
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        crossAxisAlignment: CrossAxisAlignment.center,
-        children: const <Widget>[
-          Text(
-            'Hi 小鹿扫描！',
-            style: style,
-          ),
-          SizedBox(
-            width: 80,
-            height: 80,
-            child: CircleAvatar(
-              radius: 50,
-              backgroundImage: AssetImage(
-                'images/plant1.jpg',
-              ),
-            ),
-          ),
-        ],
-      ),
-    );
-  }
-
-  // 构建搜索区
-  Container _buildSearch() {
-    return Container(
-      height: 60,
-      alignment: Alignment.centerLeft,
-      padding: const EdgeInsets.only(left: 20.0),
-      decoration: BoxDecoration(
-        color: Colors.white,
-        border: Border.all(width: 1.0, color: greenColor),
-        borderRadius: const BorderRadius.all(
-          Radius.circular(20),
-        ),
-      ),
-      child: const TextField(
-        autofocus: true,
-        decoration: InputDecoration(
-          border: OutlineInputBorder(
-            borderSide: BorderSide.none,
-          ),
-          prefixIcon: Icon(
-            Icons.search,
-            color: greenColor,
-          ),
-          // labelText: '搜索',
-          hintText: 'Search',
-          hintStyle: TextStyle(
-            fontSize: 20,
-            color: greenColor,
-          ),
-        ),
-      ),
-    );
-  }
-
   // 构建顶部appBar的私有方法
   AppBar _buildAppBar(context) {
     return AppBar(
@@ -130,6 +53,83 @@ class PlantShop extends StatelessWidget {
       ],
     );
   }
+}
+
+// 构建顶部Header
+Container _buildHeader() {
+  // banner中的字体样式
+  const style = TextStyle(
+    color: Colors.white,
+    fontSize: 32,
+    fontWeight: FontWeight.bold,
+  );
+  return Container(
+    padding: const EdgeInsets.only(
+      bottom: 50,
+    ),
+    height: 160,
+    decoration: const BoxDecoration(
+      color: greenColor,
+      borderRadius: BorderRadius.only(
+        bottomLeft: Radius.circular(40),
+        bottomRight: Radius.circular(40),
+      ),
+    ),
+    child: Row(
+      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+      crossAxisAlignment: CrossAxisAlignment.center,
+      children: const <Widget>[
+        Text(
+          'Hi 小鹿扫描！',
+          style: style,
+        ),
+        SizedBox(
+          width: 80,
+          height: 80,
+          child: CircleAvatar(
+            radius: 50,
+            backgroundImage: AssetImage(
+              'images/plant1.jpg',
+            ),
+          ),
+        ),
+      ],
+    ),
+  );
+}
+
+// 构建搜索区
+Container _buildSearch() {
+  return Container(
+    height: 60,
+    alignment: Alignment.centerLeft,
+    padding: const EdgeInsets.only(left: 20.0),
+    decoration: BoxDecoration(
+      color: Colors.white,
+      border: Border.all(width: 1.0, color: greenColor),
+      borderRadius: const BorderRadius.all(
+        Radius.circular(20),
+      ),
+    ),
+    child: const TextField(
+      autofocus: true,
+      decoration: InputDecoration(
+        border: OutlineInputBorder(
+          borderSide: BorderSide.none,
+        ),
+        prefixIcon: Icon(
+          Icons.search,
+          color: greenColor,
+        ),
+        // labelText: '搜索',
+        hintText: 'Search',
+        hintStyle: TextStyle(
+          fontSize: 20,
+          color: greenColor,
+        ),
+      ),
+    ),
+  );
 }
 
 // Body类
