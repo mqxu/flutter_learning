@@ -35,7 +35,7 @@ class ChipWidget extends StatelessWidget {
               children: <Widget>[
                 Chip(
                   label: const Text('走进Flutter的世界'),
-                  avatar: Image.asset('images/Android_Studio.png'),
+                  avatar: Image.asset('assets/images/Android_Studio.png'),
                   padding: const EdgeInsets.all(5),
                   labelPadding: const EdgeInsets.all(5),
                   backgroundColor: Colors.indigo.withAlpha(66),

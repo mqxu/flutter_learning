@@ -46,7 +46,7 @@ class _SwitchListTileWidgetState extends State<SwitchListTileWidget> {
                   dense: _dense,
                   activeColor: Colors.orangeAccent,
                   secondary: Image.asset(
-                    'images/flutter.webp',
+                    'assets/images/flutter.webp',
                   ),
                   title: const Text('走进Flutter'),
                   subtitle: const Text('@SwitchListTile组件'),

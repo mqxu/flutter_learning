@@ -114,7 +114,7 @@ class ImageWidget extends StatelessWidget {
                 margin: const EdgeInsets.symmetric(
                   vertical: 10.0,
                 ),
-                child: Text(
+                child: const Text(
                   '图片重复模式',
                   style: subTitleStyle,
                 ),

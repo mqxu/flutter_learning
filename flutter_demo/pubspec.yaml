@@ -9,7 +9,8 @@ dependencies:
   flutter:
     sdk: flutter
   cupertino_icons: ^1.0.2
-  provider: ^6.0.3
+  flutter_localizations:
+    sdk: flutter
 
 dev_dependencies:
   flutter_test:
@@ -20,5 +21,9 @@ flutter:
   uses-material-design: true
   assets:
     - images/
-    - images/bg1.jpg
-    - images/avatar.jpg
+    - images/Android_Studio.png
+    - images/Books.png
+  fonts:
+    - family: iconfont
+      fonts:
+        - asset: images/iconfont.ttf

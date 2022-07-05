@@ -11,10 +11,10 @@ import 'package:flutter_demo/widget/stateful/custom_bottomappbar.dart';
 import 'package:flutter_demo/widget/stateful/image_widget.dart';
 import 'package:flutter_demo/widget/stateful/pageviewcontrol.dart';
 import 'package:flutter_demo/widget/stateful/sliverappbar_widget.dart';
+import 'package:flutter_demo/widget/stateless/aboutdialog_widget.dart';
 import 'package:flutter_demo/widget/stateless/aboutlisttile_widget.dart';
 import 'package:flutter_demo/widget/stateless/actionchip_widget.dart';
 import 'package:flutter_demo/widget/stateless/alertdialog_widget.dart';
-import 'package:flutter_demo/widget/stateless/animatedicon_widget.dart';
 import 'package:flutter_demo/widget/stateless/button_widget.dart';
 import 'package:flutter_demo/widget/stateless/card_widget.dart';
 import 'package:flutter_demo/widget/stateless/checkboxlisttile_widget.dart';
@@ -22,16 +22,26 @@ import 'package:flutter_demo/widget/stateless/chip_widget.dart';
 import 'package:flutter_demo/widget/stateless/choicechip_widget.dart';
 import 'package:flutter_demo/widget/stateless/circleavatar_widget.dart';
 import 'package:flutter_demo/widget/stateless/container_widget.dart';
-import 'package:flutter_demo/widget/stateless/datatable_widget.dart';
+import 'package:flutter_demo/widget/stateless/cupertino_widget.dart';
+import 'package:flutter_demo/widget/stateless/daypicker_widget.dart';
+import 'package:flutter_demo/widget/stateless/dialog_widget.dart';
+import 'package:flutter_demo/widget/stateless/divider_widget.dart';
 import 'package:flutter_demo/widget/stateless/filterchip.dart';
 import 'package:flutter_demo/widget/stateless/gesturedetector_widget.dart';
 import 'package:flutter_demo/widget/stateless/gridtile_widget.dart';
 import 'package:flutter_demo/widget/stateless/gridview_widget.dart';
+import 'package:flutter_demo/widget/stateless/icon_widget.dart';
 import 'package:flutter_demo/widget/stateless/inputchip_widget.dart';
 import 'package:flutter_demo/widget/stateless/listtile_widget.dart';
 import 'package:flutter_demo/widget/stateless/listview_widget.dart';
+import 'package:flutter_demo/widget/stateless/materialbanner_widget.dart';
+import 'package:flutter_demo/widget/stateless/navigationtoolbar_widget.dart';
 import 'package:flutter_demo/widget/stateless/pageview_widget.dart';
+import 'package:flutter_demo/widget/stateless/placeholder_widget.dart';
+import 'package:flutter_demo/widget/stateless/preferredsize_widget.dart';
 import 'package:flutter_demo/widget/stateless/radiolisttile_widget.dart';
+import 'package:flutter_demo/widget/stateless/safearea_widget.dart';
+import 'package:flutter_demo/widget/stateless/simpledialog_widget.dart';
 import 'package:flutter_demo/widget/stateless/singlechildscrollview_widget.dart';
 import 'package:flutter_demo/widget/stateless/spacer_widget.dart';
 import 'package:flutter_demo/widget/stateless/switchlisttile_widget.dart';
@@ -73,10 +83,20 @@ Map<String, Widget Function(BuildContext)> routes = {
   '/radiolisttile': (context) => const RadioListTileWidget(),
   '/gridtile': (context) => const GridTileWidget(),
   '/aboutlisttile': (context) => const AboutListTileWidget(),
-  '/datatable': (context) => const DataTableWidget(),
   '/spacer': (context) => const SpacerWidget(),
-  '/animatedicon': (context) => const AnimatedIconWidget(),
   '/alertdialog': (context) => const AlertDialogWidget(),
+  '/dialog': (context) => const DialogWidget(),
+  '/aboutdialog': (context) => const AboutDialogWidget(),
+  '/simpledialog': (context) => const SimpleDialogWidget(),
+  '/daypicker': (context) => const DayPickerWidget(),
+  '/safearea': (context) => const SafeAreaWidget(),
+  '/materialbanner': (context) => const MaterialBannerWidget(),
+  '/navigationtoolbar': (context) => const NavigationToolbarWidget(),
+  '/placeholder': (context) => const PlaceholderWidget(),
+  '/icon': (context) => const IconWidget(),
+  '/divider': (context) => const DividerWidget(),
+  '/preferredsize': (context) => const MyPreferredSizeWidget(),
+  '/cupertino': (context) => const CupertinoWidget(),
   // 有状态组件导航
   '/image': (context) => const ImageWidget(),
   '/sliverappbar': (context) => const SliverAppBarWidget(),
