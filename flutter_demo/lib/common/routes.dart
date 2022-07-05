@@ -4,9 +4,9 @@ import 'package:flutter_demo/bottom/category_page.dart';
 import 'package:flutter_demo/bottom/favorite_page.dart';
 import 'package:flutter_demo/bottom/index.dart';
 import 'package:flutter_demo/bottom/sample_page.dart';
-import 'package:flutter_demo/sample/demo_page.dart';
 import 'package:flutter_demo/sample/plant_shop.dart';
 import 'package:flutter_demo/sample/timeline_page.dart';
+import 'package:flutter_demo/sample/wallet_page.dart';
 import 'package:flutter_demo/widget/stateful/custom_bottomappbar.dart';
 import 'package:flutter_demo/widget/stateful/image_widget.dart';
 import 'package:flutter_demo/widget/stateful/pageviewcontrol.dart';
@@ -36,9 +36,9 @@ import 'package:flutter_demo/widget/stateless/listtile_widget.dart';
 import 'package:flutter_demo/widget/stateless/listview_widget.dart';
 import 'package:flutter_demo/widget/stateless/materialbanner_widget.dart';
 import 'package:flutter_demo/widget/stateless/navigationtoolbar_widget.dart';
+import 'package:flutter_demo/widget/stateless/others_widget.dart';
 import 'package:flutter_demo/widget/stateless/pageview_widget.dart';
 import 'package:flutter_demo/widget/stateless/placeholder_widget.dart';
-import 'package:flutter_demo/widget/stateless/preferredsize_widget.dart';
 import 'package:flutter_demo/widget/stateless/radiolisttile_widget.dart';
 import 'package:flutter_demo/widget/stateless/safearea_widget.dart';
 import 'package:flutter_demo/widget/stateless/simpledialog_widget.dart';
@@ -95,7 +95,7 @@ Map<String, Widget Function(BuildContext)> routes = {
   '/placeholder': (context) => const PlaceholderWidget(),
   '/icon': (context) => const IconWidget(),
   '/divider': (context) => const DividerWidget(),
-  '/preferredsize': (context) => const MyPreferredSizeWidget(),
+  '/others': (context) => const OthersWidget(),
   '/cupertino': (context) => const CupertinoWidget(),
   // 有状态组件导航
   '/image': (context) => const ImageWidget(),
@@ -104,5 +104,5 @@ Map<String, Widget Function(BuildContext)> routes = {
   // 示例导航
   '/plant-shop': (context) => const PlantShop(),
   '/timeline': (context) => const TimelinePage(),
-  '/demo': (context) => const DemoPage(),
+  '/wallet': (context) => const WalletPage(),
 };

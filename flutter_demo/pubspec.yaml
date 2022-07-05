@@ -21,8 +21,6 @@ flutter:
   uses-material-design: true
   assets:
     - images/
-    - images/Android_Studio.png
-    - images/Books.png
   fonts:
     - family: iconfont
       fonts:

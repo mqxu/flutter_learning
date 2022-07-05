@@ -100,8 +100,10 @@ final statelessList = <ContainerInfo>[
   ContainerInfo('Placeholder', '一个矩形和叉叉的占位组件，,可指定颜色、线宽、宽高等属性。', '/placeholder'),
   ContainerInfo('Icon', '各种图标组件', '/icon'),
   ContainerInfo('Divider', '水平、垂直分割线组件', '/divider'),
-  ContainerInfo('PreferredSize', '优先尺寸组件，可容纳一个子组件，设置优先尺寸，不会对其子组件施加任何约束。',
-      '/preferredsize'),
+  ContainerInfo(
+      'Others',
+      '包括PreferredSize，BackButton,CloseButton,ModalBarrier,Banners组件',
+      '/others'),
   ContainerInfo('Cupertino', 'iOS风格组件。', '/cupertino'),
 ];
 

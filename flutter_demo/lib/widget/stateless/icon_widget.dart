@@ -69,7 +69,7 @@ class IconWidget extends StatelessWidget {
                   padding: const EdgeInsets.only(),
                   onPressed: () {},
                   icon: const Icon(
-                    Icons.camera,
+                    IconFont.icon_bankcard,
                     size: 50,
                     color: Colors.green,
                   ),
@@ -94,7 +94,7 @@ class IconWidget extends StatelessWidget {
                   style: descStyle,
                 ),
               ),
-              Test(),
+              const Test(),
             ],
           ),
         ),
@@ -104,6 +104,8 @@ class IconWidget extends StatelessWidget {
 }
 
 class Test extends StatefulWidget {
+  const Test({Key? key}) : super(key: key);
+
   @override
   State<StatefulWidget> createState() => _TestState();
 }

@@ -11,32 +11,29 @@ final data = <Detail>[
   Detail('网银', '转账收入', '800.00', 'in'),
 ];
 
-class DemoPage extends StatelessWidget {
-  const DemoPage({Key? key}) : super(key: key);
+const style = TextStyle(
+  fontSize: 20,
+  fontWeight: FontWeight.bold,
+);
 
-  @override
-  Widget build(BuildContext context) {
-    return const MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: HomePage(),
-    );
-  }
-}
-
-class HomePage extends StatelessWidget {
-  const HomePage({Key? key}) : super(key: key);
+class WalletPage extends StatelessWidget {
+  const WalletPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     final double screenWidth = MediaQuery.of(context).size.width;
+
     return Scaffold(
       appBar: AppBar(
+        leading: IconButton(
+          icon: const Icon(Icons.arrow_back_ios),
+          onPressed: () {
+            Navigator.pop(context);
+          },
+        ),
         title: const Text(
           "我的钱包",
-          style: TextStyle(
-            fontSize: 20,
-            fontWeight: FontWeight.bold,
-          ),
+          style: style,
         ),
         backgroundColor: Colors.transparent, //透明
         elevation: 0, //去除阴影效果
@@ -60,8 +57,13 @@ class HomePage extends StatelessWidget {
             top: 280,
             left: 0,
             right: 0,
-            child: SingleChildScrollView(
-              child: Column(children: data.map((e) => _cardDetail(e)).toList()),
+            child: SizedBox(
+              width: MediaQuery.of(context).size.width - 20,
+              height: MediaQuery.of(context).size.height - 280,
+              child: SingleChildScrollView(
+                child:
+                    Column(children: data.map((e) => _cardDetail(e)).toList()),
+              ),
             ),
           ),
         ],
@@ -89,10 +91,10 @@ class HomePage extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: const <Widget>[
             SizedBox(
-              height: 10,
+              height: 30,
             ),
             Text(
-              "mqxu",
+              "陶然然",
               style: TextStyle(
                 fontSize: 24,
                 color: Colors.white,
@@ -140,10 +142,7 @@ class HomePage extends StatelessWidget {
                 Divider(),
                 Text(
                   "RMB 500.00",
-                  style: TextStyle(
-                    fontSize: 20,
-                    fontWeight: FontWeight.bold,
-                  ),
+                  style: style,
                 ),
               ],
             ),
@@ -153,10 +152,7 @@ class HomePage extends StatelessWidget {
                 Divider(),
                 Text(
                   "RMB 260.00",
-                  style: TextStyle(
-                    fontSize: 20,
-                    fontWeight: FontWeight.bold,
-                  ),
+                  style: style,
                 ),
               ],
             ),
@@ -171,7 +167,7 @@ class HomePage extends StatelessWidget {
     return Card(
       color: Colors.white,
       margin: const EdgeInsets.only(top: 15, left: 15, right: 15),
-      //阴影度为8
+      //阴影景深
       elevation: 8,
       child: ListTile(
         leading: Icon(

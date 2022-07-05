@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_demo/common/style.dart';
 
-class MyPreferredSizeWidget extends StatelessWidget {
-  const MyPreferredSizeWidget({Key? key}) : super(key: key);
+class OthersWidget extends StatelessWidget {
+  const OthersWidget({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -19,7 +19,7 @@ class MyPreferredSizeWidget extends StatelessWidget {
         child: AppBar(
           // 一个具有返回功能的IconButton，图标不可更改
           leading: const BackButton(color: Colors.white),
-          title: const Text('PreferredSize及其他'),
+          title: const Text('其他组件'),
           bottom: PreferredSize(
             preferredSize: const Size.fromHeight(40),
             child: Container(
@@ -104,7 +104,7 @@ class MyPreferredSizeWidget extends StatelessWidget {
                           width: 150,
                           height: 150 * 0.618,
                           child: Banner(
-                            message: "Flutter 3.0 发布",
+                            message: "Flutter发布",
                             location: e,
                             color: data[e],
                             child: const Padding(

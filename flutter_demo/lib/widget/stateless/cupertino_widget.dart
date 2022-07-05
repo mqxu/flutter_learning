@@ -44,10 +44,24 @@ class CupertinoWidget extends StatelessWidget {
               ),
               ElevatedButton(
                 onPressed: () {
-                  showDialog(
+                  showCupertinoDialog(
                       context: context,
-                      builder: (context) =>
-                          _buildCupertinoAlertDialog(context));
+                      builder: (context) {
+                        return CupertinoAlertDialog(
+                          title: const Text('提示'),
+                          content: const Text('真的要删除这个文件吗？'),
+                          actions: [
+                            CupertinoDialogAction(
+                              child: const Text('确定'),
+                              onPressed: () => Navigator.pop(context),
+                            ),
+                            CupertinoDialogAction(
+                              child: const Text('取消'),
+                              onPressed: () => Navigator.pop(context),
+                            ),
+                          ],
+                        );
+                      });
                 },
                 child: const Text('点击弹出CupertinoAlertDialog'),
               ),
@@ -111,60 +125,6 @@ class CupertinoWidget extends StatelessWidget {
             ],
           ),
         ),
-      ),
-    );
-  }
-
-  Widget _buildCupertinoAlertDialog(BuildContext context) {
-    return Material(
-      color: Colors.transparent,
-      child: CupertinoAlertDialog(
-        title: _buildTitle(context),
-        content: _buildContent(context),
-        actions: [
-          CupertinoButton(
-              child: const Text('Delete'),
-              onPressed: () => Navigator.pop(context)),
-          CupertinoButton(
-              child: const Text('Cancel'),
-              onPressed: () => Navigator.pop(context)),
-        ],
-      ),
-    );
-  }
-
-  Widget _buildTitle(BuildContext context) {
-    return Row(
-      children: [
-        const Icon(
-          CupertinoIcons.delete_solid,
-          color: Colors.red,
-        ),
-        const Expanded(
-          child: Text(
-            'DELETE FILE',
-            style: titleStyle,
-          ),
-        ),
-        InkWell(
-          child: const Icon(CupertinoIcons.clear_thick),
-          onTap: () => Navigator.pop(context),
-        )
-      ],
-    );
-  }
-
-  Widget _buildContent(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.only(top: 18),
-      child: Column(
-        children: const <Widget>[
-          Text(
-            '点击Delete将删除该文件,确定继续删除吗?',
-            style: descStyle,
-            textAlign: TextAlign.justify,
-          ),
-        ],
       ),
     );
   }
