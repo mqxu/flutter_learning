@@ -7,10 +7,13 @@ import 'package:flutter_demo/bottom/sample_page.dart';
 import 'package:flutter_demo/sample/plant_shop.dart';
 import 'package:flutter_demo/sample/timeline_page.dart';
 import 'package:flutter_demo/sample/wallet_page.dart';
-import 'package:flutter_demo/widget/stateful/custom_bottomappbar.dart';
+import 'package:flutter_demo/widget/stateful/animated_builder_widget.dart';
+import 'package:flutter_demo/widget/stateful/animated_container_widget.dart';
+import 'package:flutter_demo/widget/stateful/animated_effect_widget.dart';
+import 'package:flutter_demo/widget/stateful/animated_list_widget.dart';
+import 'package:flutter_demo/widget/stateful/animated_switcher_widget.dart';
 import 'package:flutter_demo/widget/stateful/image_widget.dart';
-import 'package:flutter_demo/widget/stateful/pageviewcontrol.dart';
-import 'package:flutter_demo/widget/stateful/sliverappbar_widget.dart';
+import 'package:flutter_demo/widget/stateful/pageview_control.dart';
 import 'package:flutter_demo/widget/stateless/aboutdialog_widget.dart';
 import 'package:flutter_demo/widget/stateless/aboutlisttile_widget.dart';
 import 'package:flutter_demo/widget/stateless/actionchip_widget.dart';
@@ -99,8 +102,11 @@ Map<String, Widget Function(BuildContext)> routes = {
   '/cupertino': (context) => const CupertinoWidget(),
   // 有状态组件导航
   '/image': (context) => const ImageWidget(),
-  '/sliverappbar': (context) => const SliverAppBarWidget(),
-  '/custombottomappbar': (context) => const CustomBottomAppBar(),
+  '/animated_container': (context) => const AnimatedContainerWidget(),
+  '/animated_list': (context) => const AnimatedListWidget(),
+  '/animated_builder': (context) => const AnimatedBuilderWidget(),
+  '/animated_switcher': (context) => const AnimatedSwitcherWidget(),
+  '/animated_effect': (context) => const AnimatedEffectWidget(),
   // 示例导航
   '/plant-shop': (context) => const PlantShop(),
   '/timeline': (context) => const TimelinePage(),
