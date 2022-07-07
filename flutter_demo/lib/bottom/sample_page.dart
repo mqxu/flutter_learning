@@ -67,8 +67,8 @@ class _SamplePageState extends State<SamplePage> {
         width: 400.0,
         height: 100.0,
         color: Colors.cyan,
-        title: '数据展示面板样例',
-        url: '/data-view',
+        title: 'DismissiblePage',
+        url: '/dismissible',
       ),
       Info(
         width: 400.0,
