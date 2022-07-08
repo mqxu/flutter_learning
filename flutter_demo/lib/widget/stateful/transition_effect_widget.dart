@@ -10,6 +10,9 @@ class TransitionEffectWidget extends StatefulWidget {
 
 class _TransitionEffectWidgetState extends State<TransitionEffectWidget>
     with TickerProviderStateMixin {
+  // 透明度变化参数
+  late AnimationController _fadeCtrl;
+
   // 旋转变化参数
   late AnimationController _rotationCtrl;
 
@@ -39,6 +42,10 @@ class _TransitionEffectWidgetState extends State<TransitionEffectWidget>
 
   @override
   void initState() {
+    _fadeCtrl =
+        AnimationController(vsync: this, duration: const Duration(seconds: 1));
+    _fadeCtrl.forward();
+
     _rotationCtrl =
         AnimationController(vsync: this, duration: const Duration(seconds: 1));
     _rotationCtrl.forward();
@@ -80,6 +87,7 @@ class _TransitionEffectWidgetState extends State<TransitionEffectWidget>
 
   @override
   void dispose() {
+    _fadeCtrl.dispose();
     _rotationCtrl.dispose();
     _scaleCtrl.dispose();
     _sizeCtrl.dispose();
@@ -105,6 +113,39 @@ class _TransitionEffectWidgetState extends State<TransitionEffectWidget>
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
+              const Text(
+                '透明度变换 FadeTransition',
+                style: titleStyle,
+              ),
+              Container(
+                margin: const EdgeInsets.symmetric(
+                  vertical: 10.0,
+                ),
+                child: const Text(
+                  '可容纳一个子组件，并使其进行透明度渐变动画，需要提供动画器 opacity ，拥有 alignment 属性。',
+                  style: descStyle,
+                ),
+              ),
+              GestureDetector(
+                onTap: () {
+                  _fadeCtrl.reset();
+                  _fadeCtrl.forward();
+                },
+                child: Container(
+                  color: Colors.grey.withAlpha(77),
+                  width: 100,
+                  height: 100,
+                  child: FadeTransition(
+                    opacity: _fadeCtrl,
+                    // 子组件
+                    child: const Icon(
+                      Icons.android,
+                      color: Colors.green,
+                      size: 60,
+                    ),
+                  ),
+                ),
+              ),
               const Text(
                 '旋转变换 RotationTransition',
                 style: titleStyle,

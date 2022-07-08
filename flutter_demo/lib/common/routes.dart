@@ -4,21 +4,31 @@ import 'package:flutter_demo/bottom/category_page.dart';
 import 'package:flutter_demo/bottom/favorite_page.dart';
 import 'package:flutter_demo/bottom/index.dart';
 import 'package:flutter_demo/bottom/sample_page.dart';
-import 'package:flutter_demo/sample/dismissible_page.dart';
+import 'package:flutter_demo/sample/lock_page.dart';
+import 'package:flutter_demo/sample/music_player.dart';
 import 'package:flutter_demo/sample/plant_shop.dart';
 import 'package:flutter_demo/sample/timeline_page.dart';
 import 'package:flutter_demo/sample/wallet_page.dart';
+import 'package:flutter_demo/widget/stateful/Refresh_indicator_widget.dart';
 import 'package:flutter_demo/widget/stateful/animated_builder_widget.dart';
 import 'package:flutter_demo/widget/stateful/animated_container_widget.dart';
 import 'package:flutter_demo/widget/stateful/animated_effect_widget.dart';
 import 'package:flutter_demo/widget/stateful/animated_list_widget.dart';
 import 'package:flutter_demo/widget/stateful/animated_switcher_widget.dart';
+import 'package:flutter_demo/widget/stateful/checkbox_radio_widget.dart';
 import 'package:flutter_demo/widget/stateful/future_builder_widget.dart';
 import 'package:flutter_demo/widget/stateful/hero_widget.dart';
 import 'package:flutter_demo/widget/stateful/image_widget.dart';
 import 'package:flutter_demo/widget/stateful/material_app_widget.dart';
 import 'package:flutter_demo/widget/stateful/material_widget.dart';
+import 'package:flutter_demo/widget/stateful/overlay_widget.dart';
 import 'package:flutter_demo/widget/stateful/pageview_control.dart';
+import 'package:flutter_demo/widget/stateful/radio_widget.dart';
+import 'package:flutter_demo/widget/stateful/range_slider_widget.dart';
+import 'package:flutter_demo/widget/stateful/slider_widget.dart';
+import 'package:flutter_demo/widget/stateful/snack_%20bar_widget.dart';
+import 'package:flutter_demo/widget/stateful/stepper_widget.dart';
+import 'package:flutter_demo/widget/stateful/switch_widget.dart';
 import 'package:flutter_demo/widget/stateful/transition_effect_widget.dart';
 import 'package:flutter_demo/widget/stateful/will_pop_scope_widget.dart';
 import 'package:flutter_demo/widget/stateless/aboutdialog_widget.dart';
@@ -120,10 +130,19 @@ Map<String, Widget Function(BuildContext)> routes = {
   '/will_pop_scope': (context) => const WillPopScopeWidget(),
   '/hero': (context) => const HeroWidget(),
   '/future_builder': (context) => const FutureBuilderWidget(),
-  // '/overlay': (context) => const OverlayWidget(),
+  '/overlay': (context) => const OverlayWidget(),
+  '/stepper': (context) => const StepperWidget(),
+  '/checkbox': (context) => const CheckboxRadioWidget(),
+  '/switch': (context) => const SwitchWidget(),
+  '/slider': (context) => const SliderWidget(),
+  '/range_slider': (context) => const RangeSliderWidget(),
+  '/radio': (context) => const RadioWidget(),
+  '/snack_bar': (context) => const SnackBarWidget(),
+  '/refresh_indicator': (context) => const RefreshIndicatorWidget(),
   // 示例导航
   '/plant-shop': (context) => const PlantShop(),
   '/timeline': (context) => const TimelinePage(),
   '/wallet': (context) => const WalletPage(),
-  '/dismissible': (context) => const DismissiblePage(),
+  '/lock': (context) => const LockPage(),
+  '/music_player': (context) => const MusicPlayer(),
 };

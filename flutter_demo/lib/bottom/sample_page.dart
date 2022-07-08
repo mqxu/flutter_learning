@@ -67,15 +67,15 @@ class _SamplePageState extends State<SamplePage> {
         width: 400.0,
         height: 100.0,
         color: Colors.cyan,
-        title: 'DismissiblePage',
-        url: '/dismissible',
+        title: 'Lock',
+        url: '/lock',
       ),
       Info(
         width: 400.0,
         height: 100.0,
         color: Colors.blue,
         title: '音乐播放器样例',
-        url: '/musicplayer',
+        url: '/music_player',
       ),
       Info(
         width: 400.0,

@@ -140,5 +140,15 @@ final statefulList = <ContainerInfo>[
       'FutureBuilder',
       '可指定一个Future对象，能够监听异步执行的状态，并在构造器中根据状态构建不同的界面。该Future对象不能和FutureBuilder同时创建，否则可能过渡刷新。',
       '/future_builder'),
-  // ContainerInfo('Overlay', '可以将组件在全应用中进行悬浮显示，能够添加或移除组件，它们有独立管理的栈。', '/overlay'),
+  ContainerInfo('Overlay', '可以将组件在全应用中进行悬浮显示，能够添加或移除组件，它们有独立管理的栈。', '/overlay'),
+  ContainerInfo(
+      'Stepper', '步骤条组件,可指定一步步的操作，可自定义步骤的内容，确认和返回的按钮以及步骤排列的方向。', '/stepper'),
+  ContainerInfo('Checkbox', '复选组件、单选组件、切换组件。', '/checkbox'),
+  ContainerInfo('Slider', '滑块组件，可以在指定的最大值和最小值之间拖动选择。可指定颜色、分段数及显示的标签，接收进度条变化回调。',
+      '/slider'),
+  ContainerInfo('RangeSlider',
+      '范围滑块组件，支持在两点之间滑动，获取之间的范围。可指定颜色、分段数及显示的标签，接收进度条变化回调。', '/range_slider'),
+  ContainerInfo('SnackBar', '从底部弹出的消息条，可指定形状、影深、背景色等。', '/snack_bar'),
+  ContainerInfo('RefreshIndicator',
+      '下拉时会显示刷新图标，松手后可以执行指定的异步方法。可指定颜色、到顶端的距离等属性。', '/refresh_indicator'),
 ];
