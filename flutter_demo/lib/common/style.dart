@@ -22,6 +22,11 @@ const descStyle = TextStyle(
   fontSize: 18,
 );
 
+const descLightStyle = TextStyle(
+  fontSize: 18,
+  color: Colors.white,
+);
+
 const shadowStyle = TextStyle(fontSize: 16, color: Colors.white, shadows: [
   Shadow(
     color: Colors.black,

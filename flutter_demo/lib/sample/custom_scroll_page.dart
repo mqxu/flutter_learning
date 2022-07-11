@@ -2,14 +2,14 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 
-class MusicPlayer extends StatefulWidget {
-  const MusicPlayer({Key? key}) : super(key: key);
+class CustomScrollPage extends StatefulWidget {
+  const CustomScrollPage({Key? key}) : super(key: key);
 
   @override
-  State<MusicPlayer> createState() => _MusicPlayerState();
+  State<CustomScrollPage> createState() => _CustomScrollPageState();
 }
 
-class _MusicPlayerState extends State<MusicPlayer>
+class _CustomScrollPageState extends State<CustomScrollPage>
     with SingleTickerProviderStateMixin {
   //在这里标签页面使用的是TabView所以需要创建一个控制器
   late TabController tabController;

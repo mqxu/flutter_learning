@@ -4,8 +4,9 @@ import 'package:flutter_demo/bottom/category_page.dart';
 import 'package:flutter_demo/bottom/favorite_page.dart';
 import 'package:flutter_demo/bottom/index.dart';
 import 'package:flutter_demo/bottom/sample_page.dart';
+import 'package:flutter_demo/sample/custom_scroll_page.dart';
 import 'package:flutter_demo/sample/lock_page.dart';
-import 'package:flutter_demo/sample/music_player.dart';
+import 'package:flutter_demo/sample/login_page.dart';
 import 'package:flutter_demo/sample/plant_shop.dart';
 import 'package:flutter_demo/sample/timeline_page.dart';
 import 'package:flutter_demo/sample/wallet_page.dart';
@@ -15,21 +16,34 @@ import 'package:flutter_demo/widget/stateful/animated_container_widget.dart';
 import 'package:flutter_demo/widget/stateful/animated_effect_widget.dart';
 import 'package:flutter_demo/widget/stateful/animated_list_widget.dart';
 import 'package:flutter_demo/widget/stateful/animated_switcher_widget.dart';
+import 'package:flutter_demo/widget/stateful/bottom_sheet_widget.dart';
 import 'package:flutter_demo/widget/stateful/checkbox_radio_widget.dart';
+import 'package:flutter_demo/widget/stateful/draggble_widget.dart';
+import 'package:flutter_demo/widget/stateful/expansion_widget.dart';
+import 'package:flutter_demo/widget/stateful/form_widget.dart';
 import 'package:flutter_demo/widget/stateful/future_builder_widget.dart';
 import 'package:flutter_demo/widget/stateful/hero_widget.dart';
 import 'package:flutter_demo/widget/stateful/image_widget.dart';
+import 'package:flutter_demo/widget/stateful/ink_widget.dart';
+import 'package:flutter_demo/widget/stateful/list_wheel_scrollview_widget.dart';
 import 'package:flutter_demo/widget/stateful/material_app_widget.dart';
 import 'package:flutter_demo/widget/stateful/material_widget.dart';
 import 'package:flutter_demo/widget/stateful/overlay_widget.dart';
 import 'package:flutter_demo/widget/stateful/pageview_control.dart';
+import 'package:flutter_demo/widget/stateful/paginated_datatable%20_widget.dart';
+import 'package:flutter_demo/widget/stateful/progress_indicator_widget.dart';
 import 'package:flutter_demo/widget/stateful/radio_widget.dart';
 import 'package:flutter_demo/widget/stateful/range_slider_widget.dart';
+import 'package:flutter_demo/widget/stateful/reorderable_listview_widget.dart';
+import 'package:flutter_demo/widget/stateful/scaffold_widget.dart';
+import 'package:flutter_demo/widget/stateful/selectable_text_widget.dart';
 import 'package:flutter_demo/widget/stateful/slider_widget.dart';
 import 'package:flutter_demo/widget/stateful/snack_%20bar_widget.dart';
 import 'package:flutter_demo/widget/stateful/stepper_widget.dart';
 import 'package:flutter_demo/widget/stateful/switch_widget.dart';
+import 'package:flutter_demo/widget/stateful/textfield_widget.dart';
 import 'package:flutter_demo/widget/stateful/transition_effect_widget.dart';
+import 'package:flutter_demo/widget/stateful/value_listenable_builder_widget.dart';
 import 'package:flutter_demo/widget/stateful/will_pop_scope_widget.dart';
 import 'package:flutter_demo/widget/stateless/aboutdialog_widget.dart';
 import 'package:flutter_demo/widget/stateless/aboutlisttile_widget.dart';
@@ -139,10 +153,25 @@ Map<String, Widget Function(BuildContext)> routes = {
   '/radio': (context) => const RadioWidget(),
   '/snack_bar': (context) => const SnackBarWidget(),
   '/refresh_indicator': (context) => const RefreshIndicatorWidget(),
+  '/draggble': (context) => const DraggableWidget(),
+  '/bottom_sheet': (context) => const BottomSheetWidget(),
+  '/reorderable_listview': (context) => const ReorderableListViewWidget(),
+  '/list_wheel_scrollview': (context) => const ListWheelScrollViewWidget(),
+  '/form': (context) => const FormWidget(),
+  '/textfield': (context) => const TextFieldWidget(),
+  '/expansion': (context) => const ExpansionWidget(),
+  '/value_listenable_builder': (context) =>
+      const ValueListenableBuilderWidget(),
+  '/scaffold': (context) => const ScaffoldWidget(),
+  '/ink': (context) => const InkWidget(),
+  '/progress_indicator': (context) => const ProgressIndicatorWidget(),
+  '/selectable_text': (context) => const SelectableTextWidget(),
+  '/paginated_datatable': (context) => const PaginatedDataTableWidget(),
   // 示例导航
   '/plant-shop': (context) => const PlantShop(),
   '/timeline': (context) => const TimelinePage(),
   '/wallet': (context) => const WalletPage(),
   '/lock': (context) => const LockPage(),
-  '/music_player': (context) => const MusicPlayer(),
+  '/custom_scroll': (context) => const CustomScrollPage(),
+  '/login': (context) => const LoginPage(),
 };

@@ -54,17 +54,18 @@ class Toast {
         return Positioned(
           top: MediaQuery.of(context).size.height * 0.5,
           child: Material(
+            color: Colors.transparent,
             child: Container(
               width: MediaQuery.of(context).size.width,
               alignment: Alignment.center,
               child: Center(
                 child: Card(
-                  color: Colors.grey.withAlpha(77),
+                  color: Colors.grey.withAlpha(22),
                   child: Padding(
                     padding: const EdgeInsets.all(15),
                     child: Text(
                       message,
-                      style: titleStyle,
+                      style: descLightStyle,
                     ),
                   ),
                 ),

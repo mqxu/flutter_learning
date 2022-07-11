@@ -66,6 +66,13 @@ class _SamplePageState extends State<SamplePage> {
       Info(
         width: 400.0,
         height: 100.0,
+        color: Colors.purple,
+        title: '登录页面样例',
+        url: '/login',
+      ),
+      Info(
+        width: 400.0,
+        height: 100.0,
         color: Colors.cyan,
         title: 'Lock',
         url: '/lock',
@@ -74,16 +81,9 @@ class _SamplePageState extends State<SamplePage> {
         width: 400.0,
         height: 100.0,
         color: Colors.blue,
-        title: '音乐播放器样例',
-        url: '/music_player',
+        title: '自定义滚动视图',
+        url: '/custom_scroll',
       ),
-      Info(
-        width: 400.0,
-        height: 100.0,
-        color: Colors.purple,
-        title: '健身运动样例',
-        url: '/sport',
-      )
     ];
     return Container(
       width: size.width,
