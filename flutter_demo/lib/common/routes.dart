@@ -5,11 +5,21 @@ import 'package:flutter_demo/bottom/favorite_page.dart';
 import 'package:flutter_demo/bottom/index.dart';
 import 'package:flutter_demo/bottom/sample_page.dart';
 import 'package:flutter_demo/sample/custom_scroll_page.dart';
+import 'package:flutter_demo/sample/demo_page.dart';
 import 'package:flutter_demo/sample/lock_page.dart';
 import 'package:flutter_demo/sample/login_page.dart';
 import 'package:flutter_demo/sample/plant_shop.dart';
 import 'package:flutter_demo/sample/timeline_page.dart';
 import 'package:flutter_demo/sample/wallet_page.dart';
+import 'package:flutter_demo/widget/liveaway/expanded_widget.dart';
+import 'package:flutter_demo/widget/multi/flex_widget.dart';
+import 'package:flutter_demo/widget/other/table_widget.dart';
+import 'package:flutter_demo/widget/single/align_padding_widget.dart';
+import 'package:flutter_demo/widget/single/box_widget.dart';
+import 'package:flutter_demo/widget/single/clip_widget.dart';
+import 'package:flutter_demo/widget/single/custom_paint_widget.dart';
+import 'package:flutter_demo/widget/sliver/custom_scroll_view_widget.dart';
+import 'package:flutter_demo/widget/sliver/sliver_list_widget.dart';
 import 'package:flutter_demo/widget/stateful/Refresh_indicator_widget.dart';
 import 'package:flutter_demo/widget/stateful/animated_builder_widget.dart';
 import 'package:flutter_demo/widget/stateful/animated_container_widget.dart';
@@ -30,7 +40,6 @@ import 'package:flutter_demo/widget/stateful/material_app_widget.dart';
 import 'package:flutter_demo/widget/stateful/material_widget.dart';
 import 'package:flutter_demo/widget/stateful/overlay_widget.dart';
 import 'package:flutter_demo/widget/stateful/pageview_control.dart';
-import 'package:flutter_demo/widget/stateful/paginated_datatable%20_widget.dart';
 import 'package:flutter_demo/widget/stateful/progress_indicator_widget.dart';
 import 'package:flutter_demo/widget/stateful/radio_widget.dart';
 import 'package:flutter_demo/widget/stateful/range_slider_widget.dart';
@@ -85,12 +94,14 @@ import 'package:flutter_demo/widget/stateless/useraccountdrawerheader_widget.dar
 import 'package:flutter_demo/widget/stateless/visiblity_widget.dart';
 
 Map<String, Widget Function(BuildContext)> routes = {
+  /// 底部导航
   '/index': (context) => const Index(),
   '/category': (context) => const CategoryPage(),
   '/favorite': (context) => const FavoritePage(),
   '/sample': (context) => const SamplePage(),
   '/add': (context) => const AddPage(),
-  // 无状态组件导航
+
+  /// 无状态组件导航
   '/container': (context) => const ContainerWidget(),
   '/text': (context) => const TextWidget(),
   '/listview': (context) => const ListViewWidget(),
@@ -131,7 +142,8 @@ Map<String, Widget Function(BuildContext)> routes = {
   '/divider': (context) => const DividerWidget(),
   '/others': (context) => const OthersWidget(),
   '/cupertino': (context) => const CupertinoWidget(),
-  // 有状态组件导航
+
+  /// 有状态组件导航
   '/image': (context) => const ImageWidget(),
   '/animated_container': (context) => const AnimatedContainerWidget(),
   '/animated_list': (context) => const AnimatedListWidget(),
@@ -166,9 +178,29 @@ Map<String, Widget Function(BuildContext)> routes = {
   '/ink': (context) => const InkWidget(),
   '/progress_indicator': (context) => const ProgressIndicatorWidget(),
   '/selectable_text': (context) => const SelectableTextWidget(),
-  '/paginated_datatable': (context) => const PaginatedDataTableWidget(),
-  // 示例导航
-  '/plant-shop': (context) => const PlantShop(),
+
+  /// 单渲染组件
+  '/clip': (context) => const ClipWidget(),
+  '/box': (context) => const BoxWidget(),
+  '/align_padding': (context) => const AlignPaddingWidget(),
+  '/custom_paint': (context) => const CustomPaintWidget(),
+
+  ///多渲染组件
+  '/flex': (context) => const FlexWidget(),
+
+  ///可折叠组件
+  '/custom_scroll_view': (context) => const CustomScrollViewWidget(),
+  '/sliver_list': (context) => const SliverListWidget(),
+
+  ///可寄居组件
+  '/expanded': (context) => const ExpandedWidget(),
+
+  ///其他组件
+  '/table': (context) => const TableWidget(),
+
+  /// 示例导航
+  '/demo_page': (context) => const DemoPae(),
+  '/plant_shop': (context) => const PlantShop(),
   '/timeline': (context) => const TimelinePage(),
   '/wallet': (context) => const WalletPage(),
   '/lock': (context) => const LockPage(),

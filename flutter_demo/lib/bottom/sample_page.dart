@@ -45,9 +45,16 @@ class _SamplePageState extends State<SamplePage> {
       Info(
         width: 400.0,
         height: 100.0,
+        color: Colors.pink.shade300,
+        title: 'Demo Page',
+        url: '/demo_page',
+      ),
+      Info(
+        width: 400.0,
+        height: 100.0,
         color: Colors.green,
         title: '植物小店展示样例',
-        url: '/plant-shop',
+        url: '/plant_shop',
       ),
       Info(
         width: 400.0,

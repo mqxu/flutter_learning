@@ -286,10 +286,11 @@ class _BannerHomepageState extends State<BannerHomepage> {
 
   //本地资源图片
   List<String> imageList = [
-    "images/banner1.webp",
-    "images/banner2.webp",
-    "images/banner3.webp",
-    "images/banner4.webp",
+    "images/img9.jpg",
+    "images/img13.jpg",
+    "images/img10.jpg",
+    "images/img11.jpg",
+    "images/img12.jpg",
   ];
 
   //当前显示的索引

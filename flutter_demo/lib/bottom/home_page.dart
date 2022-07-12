@@ -69,11 +69,11 @@ class Body extends StatelessWidget {
           width: 180,
           height: 150,
           child: Card(
-            color: Color(0xffe05b48),
+            color: Color(0xFF5f6cd1),
             elevation: 10,
             child: Center(
               child: Text(
-                'Dart基础学习',
+                'Flutter Widget',
                 style: titleLightStyle,
               ),
             ),
@@ -83,11 +83,11 @@ class Body extends StatelessWidget {
           width: 180,
           height: 150,
           child: Card(
-            color: Color(0xFF5f6cd1),
+            color: Color(0xffe05b48),
             elevation: 10,
             child: Center(
               child: Text(
-                'Flutter Widget',
+                'Dart基础学习',
                 style: titleLightStyle,
               ),
             ),
