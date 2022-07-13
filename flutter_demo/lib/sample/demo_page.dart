@@ -25,25 +25,16 @@ class _DemoPaeState extends State<DemoPae> {
 
   SliverAppBar _buildSliverAppBar() {
     return SliverAppBar(
-      // backgroundColor: Colors.pink.shade200,
-      backgroundColor: Colors.transparent,
+      backgroundColor: Colors.pink.shade200,
       expandedHeight: 160.0,
       pinned: true,
       elevation: 8,
       flexibleSpace: FlexibleSpaceBar(
-        title: const Text('Demo Page'),
+        title: const Text('Favorite Page'),
         titlePadding: const EdgeInsets.only(left: 55, bottom: 15),
         collapseMode: CollapseMode.pin,
         background: Container(
           decoration: const BoxDecoration(
-            borderRadius: BorderRadius.only(
-              bottomLeft: Radius.circular(
-                45,
-              ),
-              bottomRight: Radius.circular(
-                45,
-              ),
-            ),
             image: DecorationImage(
               image: AssetImage(
                 'images/banner4.jpg',
@@ -55,7 +46,10 @@ class _DemoPaeState extends State<DemoPae> {
       ),
       actions: <Widget>[
         IconButton(
-          icon: const Icon(Icons.add_circle),
+          icon: const Icon(
+            Icons.add_circle,
+            size: 30,
+          ),
           tooltip: 'Add new entry',
           onPressed: () {},
         ),
@@ -75,13 +69,13 @@ class _DemoPaeState extends State<DemoPae> {
               size: Size.zero,
               child: Padding(
                 padding: EdgeInsets.only(
-                  right: 25.0,
+                  right: 75.0,
                   top: 10,
                 ),
                 child: Icon(
                   Icons.favorite,
                   color: Colors.red,
-                  size: 35,
+                  size: 45,
                 ),
               ),
             ),

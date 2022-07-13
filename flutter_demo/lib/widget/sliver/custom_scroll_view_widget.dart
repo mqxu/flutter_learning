@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_demo/common/color_utils.dart';
 import 'package:flutter_demo/common/data.dart';
 import 'package:flutter_demo/common/style.dart';
 
@@ -8,19 +9,24 @@ class CustomScrollViewWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('CustomScrollView'),
-      ),
-      body: SizedBox(
-        height: MediaQuery.of(context).size.height,
-        child: CustomScrollView(
-          anchor: 0,
-          scrollDirection: Axis.vertical,
-          reverse: false,
-          slivers: <Widget>[
-            _buildSliverAppBar(),
-            _buildSliverFixedExtentList(),
-          ],
+      // appBar: AppBar(
+      //   title: const Text('CustomScrollView'),
+      // ),
+      body: SafeArea(
+        top: false,
+        bottom: false,
+        child: SizedBox(
+          height: MediaQuery.of(context).size.height,
+          child: CustomScrollView(
+            anchor: 0,
+            scrollDirection: Axis.vertical,
+            reverse: false,
+            slivers: <Widget>[
+              _buildSliverAppBar(),
+              // _buildSliverFixedExtentList(),
+              _buildSliverList(),
+            ],
+          ),
         ),
       ),
       // body: Container(
@@ -63,6 +69,7 @@ class CustomScrollViewWidget extends StatelessWidget {
 
   _buildSliverAppBar() {
     return SliverAppBar(
+      // backgroundColor: ColorUtils.randomColor(),
       expandedHeight: 190.0,
       leading: Container(
         padding: const EdgeInsets.all(5.0),
@@ -87,13 +94,13 @@ class CustomScrollViewWidget extends StatelessWidget {
           height: 200,
           decoration: const BoxDecoration(
             borderRadius: BorderRadius.only(
-              bottomLeft: Radius.circular(
-                50,
-              ),
-              bottomRight: Radius.circular(
-                50,
-              ),
-            ),
+                // bottomLeft: Radius.circular(
+                //   50,
+                // ),
+                // bottomRight: Radius.circular(
+                //   50,
+                // ),
+                ),
             image: DecorationImage(
               image: AssetImage(
                 'images/bg.jpg',
@@ -103,11 +110,14 @@ class CustomScrollViewWidget extends StatelessWidget {
           ),
         ),
       ),
+      actions: const [
+        CloseButton(),
+      ],
     );
   }
 
   Widget _buildSliverFixedExtentList() => SliverFixedExtentList(
-        itemExtent: 50,
+        itemExtent: 150,
         delegate: SliverChildBuilderDelegate(
           (_, index) => Container(
             alignment: Alignment.center,
@@ -118,6 +128,22 @@ class CustomScrollViewWidget extends StatelessWidget {
             ),
           ),
           childCount: data.length,
+        ),
+      );
+
+  Widget _buildSliverList() => SliverList(
+        delegate: SliverChildBuilderDelegate(
+          (_, index) => Container(
+            alignment: Alignment.center,
+            width: 100,
+            height: 80,
+            color: ColorUtils.randomColor(),
+            child: Text(
+              index.toString(),
+              style: shadowStyle,
+            ),
+          ),
+          childCount: 30,
         ),
       );
 }

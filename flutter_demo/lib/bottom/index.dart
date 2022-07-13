@@ -32,7 +32,7 @@ class _IndexState extends State<Index> {
         //   title: const Text('自定义底部导航'),
         // ),
         floatingActionButton: FloatingActionButton(
-          onPressed: () => Navigator.of(context).pushNamed('/add'),
+          onPressed: () => Navigator.of(context).pushNamed('add'),
           child: const Icon(
             Icons.add,
             size: 30,
@@ -103,7 +103,10 @@ class _IndexState extends State<Index> {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: info.asMap().keys.map((i) => _buildChild(i)).toList()
-          ..insertAll(2, [const SizedBox(width: 30)]),
+          ..insertAll(
+            2,
+            [const SizedBox(width: 30)],
+          ),
       ),
     );
   }

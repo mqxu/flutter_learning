@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_demo/common/data.dart';
-import 'package:flutter_demo/widget/custom/widget_container.dart';
+import 'package:flutter_demo/widget/custom/custom_list_item.dart';
 
 class LiveAwayWidgetPage extends StatelessWidget {
   const LiveAwayWidgetPage({Key? key}) : super(key: key);
@@ -12,7 +12,14 @@ class LiveAwayWidgetPage extends StatelessWidget {
       child: ListView.builder(
         itemCount: liveAwayList.length,
         itemBuilder: (BuildContext context, int index) {
-          return WidgetContainer(liveAwayList[index]);
+          return Column(
+            children: [
+              const SizedBox(
+                height: 10,
+              ),
+              CustomListItem(liveAwayList[index]),
+            ],
+          );
         },
       ),
     );

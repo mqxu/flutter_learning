@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_demo/widget/custom/custom_list_item.dart';
 import 'package:flutter_demo/widget/custom/widget_container.dart';
 
 final data = <dynamic>[
@@ -179,104 +180,250 @@ final statefulList = <ContainerInfo>[
 ];
 
 // 单渲染组件列表
-final singleRenderList = <ContainerInfo>[
-  ContainerInfo('Clip', '路径裁剪、椭圆裁剪、矩形裁剪、圆角矩形裁剪。', '/clip'),
-  ContainerInfo(
-      'Box', '装饰盒、定尺寸盒、适应盒、限制盒、约束盒、分率盒、比例盒、溢出盒、尺寸溢出盒、旋转盒、颜色盒。', '/box'),
-  ContainerInfo('AlignPadding', '对齐组件、基线组件、边距组件。', '/align_padding'),
-  ContainerInfo('CustomPaint', '绘制组件。', '/custom_paint'),
-  ContainerInfo('Filter', '滤色器相关。', '/filter'),
-  ContainerInfo('Builder', '布局构造器。', '/builder'),
-  ContainerInfo('Pointer', '忽视点击、吸收点击。', '/pointer'),
-  ContainerInfo('Intrinsic', '固有宽、固有高组件。', '/intrinsic'),
-  ContainerInfo('Transform', '变换组件。', '/transform'),
-  ContainerInfo('RepaintBoundary', '重绘边界组件。', '/repaint_boundary'),
-  ContainerInfo('PhysicalShape', '物理形状组件。', '/physical_shape'),
+final singleRenderList = <ItemInfo>[
+  ItemInfo(
+    'Clip',
+    '路径裁剪、椭圆裁剪、矩形裁剪、圆角矩形裁剪。',
+    'clip',
+    const Color(0xFFe4d8f8),
+    const Color(0xFFa97bf7),
+    5,
+  ),
+  ItemInfo(
+    'Box',
+    '装饰盒、定尺寸盒、适应盒、限制盒、约束盒、分率盒、比例盒、溢出盒、尺寸溢出盒、旋转盒、颜色盒。',
+    'box',
+    const Color(0xFFe4d8f8),
+    const Color(0xFFa97bf7),
+    5,
+  ),
+  ItemInfo(
+    'AlignPadding',
+    '对齐组件、基线组件、边距组件。',
+    'align_padding',
+    const Color(0xFFe4d8f8),
+    const Color(0xFFa97bf7),
+    5,
+  ),
+  ItemInfo(
+    'CustomPaint',
+    '绘制组件。',
+    'custom_paint',
+    const Color(0xFFe4d8f8),
+    const Color(0xFFa97bf7),
+    4,
+  ),
+  ItemInfo(
+    'Filter',
+    '滤色器相关。',
+    'filter',
+    const Color(0xFFe4d8f8),
+    const Color(0xFFa97bf7),
+    4,
+  ),
+  ItemInfo(
+    'Builder',
+    '布局构造器。',
+    'builder',
+    const Color(0xFFe4d8f8),
+    const Color(0xFFa97bf7),
+    4,
+  ),
+  ItemInfo(
+    'Pointer',
+    '忽视点击、吸收点击。',
+    'pointer',
+    const Color(0xFFe4d8f8),
+    const Color(0xFFa97bf7),
+    3,
+  ),
+  ItemInfo(
+    'Intrinsic',
+    '固有宽、固有高组件。',
+    'intrinsic',
+    const Color(0xFFe4d8f8),
+    const Color(0xFFa97bf7),
+    3,
+  ),
+  ItemInfo(
+    'Transform',
+    '变换组件。',
+    'transform',
+    const Color(0xFFe4d8f8),
+    const Color(0xFFa97bf7),
+    4,
+  ),
+  ItemInfo(
+    'RepaintBoundary',
+    '重绘边界组件。',
+    'repaint_boundary',
+    const Color(0xFFe4d8f8),
+    const Color(0xFFa97bf7),
+    4,
+  ),
+  ItemInfo(
+    'PhysicalShape',
+    '物理形状组件。',
+    'physical_shape',
+    const Color(0xFFe4d8f8),
+    const Color(0xFFa97bf7),
+    4,
+  ),
 ];
 
 // 多渲染组件列表
-final multiRenderList = <ContainerInfo>[
-  ContainerInfo('Flex', '弹性布局。', '/flex'),
-  ContainerInfo('Stack', '堆叠布局。', '/stack'),
-  ContainerInfo('IndexedStack', '索引堆叠。', '/indexed_stack'),
-  ContainerInfo('Wrap', '包裹布局。', '/wrap'),
-  ContainerInfo('Flow', '流动布局。', '/flow'),
-  ContainerInfo('Row', '行布局。', '/row'),
-  ContainerInfo('Column', '列布局。', '/column'),
-  ContainerInfo('RichText', '富文本。', '/rich_text'),
-  ContainerInfo('ViewPort', '视口组件。', '/view_port'),
+final multiRenderList = <ItemInfo>[
+  ItemInfo(
+    'Flex',
+    '弹性布局。',
+    'flex',
+    const Color(0xff95c7e7),
+    const Color(0xff2999e0),
+    5,
+  ),
+  ItemInfo(
+    'Stack',
+    '堆叠布局。',
+    'stack',
+    const Color(0xff95c7e7),
+    const Color(0xff2999e0),
+    5,
+  ),
+  ItemInfo(
+    'IndexedStack',
+    '索引堆叠。',
+    'indexed_stack',
+    const Color(0xff95c7e7),
+    const Color(0xff2999e0),
+    5,
+  ),
+  ItemInfo(
+    'Wrap',
+    '包裹布局。',
+    'wrap',
+    const Color(0xff95c7e7),
+    const Color(0xff2999e0),
+    5,
+  ),
+  ItemInfo(
+    'Flow',
+    '流动布局。',
+    'flow',
+    const Color(0xff95c7e7),
+    const Color(0xff2999e0),
+    5,
+  ),
+  ItemInfo(
+    'Row',
+    '行布局。',
+    '/row',
+    const Color(0xff95c7e7),
+    const Color(0xff2999e0),
+    5,
+  ),
+  ItemInfo(
+    'Column',
+    '列布局。',
+    'column',
+    const Color(0xff95c7e7),
+    const Color(0xff2999e0),
+    5,
+  ),
+  ItemInfo(
+    'RichText',
+    '富文本。',
+    'rich_text',
+    const Color(0xff95c7e7),
+    const Color(0xff2999e0),
+    5,
+  ),
+  ItemInfo(
+    'ViewPort',
+    '视口组件。',
+    'view_port',
+    const Color(0xff95c7e7),
+    const Color(0xff2999e0),
+    5,
+  ),
 ];
 
 // 可折叠组件列表
 final sliverList = <ContainerInfo>[
-  ContainerInfo('CustomScrollView', '通用滑动视图。', '/custom_scroll_view'),
+  ContainerInfo('CustomScrollView', '通用滑动视图。', 'custom_scroll_view'),
   ContainerInfo('SliverList',
-      'Sliver家族的列表组件，通过指定delegate构造子组件，通常用于CustomScrollView中。', '/sliver_list'),
+      'Sliver家族的列表组件，通过指定delegate构造子组件，通常用于CustomScrollView中。', 'sliver_list'),
   ContainerInfo(
       'SliverPersistentHeader',
       '通常用于CustomScrollView中，可以让一个组件在滑动中停留在顶部，不会在滑动中消失。',
-      '/sliver_persistent_header'),
+      'sliver_persistent_header'),
   ContainerInfo('SliverAppBar',
-      'Sliver家族的顶部栏通用结构，可以指定左中右组件、收缩空间、影深、固定模式、背景色等属性。', '/sliver_app_bar'),
+      'Sliver家族的顶部栏通用结构，可以指定左中右组件、收缩空间、影深、固定模式、背景色等属性。', 'sliver_app_bar'),
   ContainerInfo(
       'SliverGrid',
       'Sliver网格，Sliver家族的网格列表组件，和GridView类似，通过count和extent构造，通常用于CustomScrollView中。',
-      '/sliver_grid'),
+      'sliver_grid'),
   ContainerInfo('SliverToBoxAdapter',
-      'Sliver适配器，可以容纳一个普通的组件，并将其转化为Sliver家族组件的适配器。', '/sliver_to_box_adapter'),
+      'Sliver适配器，可以容纳一个普通的组件，并将其转化为Sliver家族组件的适配器。', 'sliver_to_box_adapter'),
   ContainerInfo(
       'NestedScrollView',
       '嵌套滑动视图，用于多个视图滑动嵌套处理，可以指定头部、滑动控制器、滑动方向等，其中body必须是可滑动类型的组件。',
-      '/nested_scroll_view'),
+      'nested_scroll_view'),
   ContainerInfo(
       'SliverLayoutBuilder',
       'Sliver布局构造器，Sliver家族的一员，在滑动过程中可以通过回调出的SliverConstraints对象进行子组件的构造。',
-      '/sliver_layout_builder'),
+      'sliver_layout_builder'),
   ContainerInfo(
       'SliverFillRemaining',
       'Sliver填补剩余，一个包含单个box子元素的sliver,填充了视窗中的剩余空间。可指定两个bool值控制滑动效果。',
-      '/sliver_fill_remaining'),
+      'sliver_fill_remaining'),
   ContainerInfo(
       'SliverFixedExtentList',
       'Sliver家族的列表组件，通过delegate构造子组件，可以指定item的高度，通常用于CustomScrollView中。',
-      '/sliver_fixed_extent_list'),
+      'sliver_fixed_extent_list'),
   ContainerInfo(
       'SliverFillViewPort',
       'Sliver家族的列表组件，通过delegate构造子组件，item的高度会填充视口，可以指定视口的分率。',
-      '/sliver_fill_view_port'),
+      'sliver_fill_view_port'),
   ContainerInfo(
       'SliverPadding',
       'Sliver内间距，可容纳一个Sliver家族的子组件，添加自身内边距来限制子组件的占位，核心属性为padding。',
-      '/sliver_padding'),
+      'sliver_padding'),
   ContainerInfo('SliverOpacity',
-      'Sliver透明度，可容纳一个Sliver家族的子组件，并通过opacity来指定子组件的透明度。', '/sliver_opacity'),
+      'Sliver透明度，可容纳一个Sliver家族的子组件，并通过opacity来指定子组件的透明度。', 'sliver_opacity'),
   ContainerInfo(
       'FlexibleSpaceBar',
       '伸展空间栏，通常用于SliverAppBar中的可伸展区域，可指定标题、标题间距、背景、折叠模式等。',
-      '/flexible_space_bar'),
+      'flexible_space_bar'),
   ContainerInfo('SliverAnimatedList', 'Sliver动画列表，在插入或删除项目时有动画效果的Sliver组件。',
-      '/sliver_animated_list'),
+      'sliver_animated_list'),
   ContainerInfo(
       'SliverIgnorePointer',
       'Sliver忽略事件，可以包裹一个sliver组件，通过ignoring来控制该sliver组件是否可以响应事件。',
-      '/sliver_ignore_pointer'),
+      'sliver_ignore_pointer'),
   ContainerInfo(
       'SliverOverlapAbsorber',
       '重叠吸收器，包裹另一个sliver，并迫使其布局范围被视为重叠，需要和SliverOverlapInjector联用。',
-      '/sliver_overlap_absorber'),
+      'sliver_overlap_absorber'),
 ];
 
 // 可寄居组件列表
-final liveAwayList = <ContainerInfo>[
-  ContainerInfo('Expanded', '延展组件', '/expanded'),
+final liveAwayList = <ItemInfo>[
+  ItemInfo(
+    'Expanded',
+    '延展组件延展组件延展组件延展组件延展组件延展组件延展组件延展组件延展组件延展组件延展组件延展组件延展组件延展组件延展组件延展组件',
+    'expanded',
+    const Color(0xffd0efd8),
+    const Color(0xff499a5b),
+    5,
+  ),
 ];
 
 // 其他未分类组件列表
 final otherList = <ContainerInfo>[
   ContainerInfo(
-      'Table', '表格组件,用于展示表格的组件，可指定边线、列宽、文字方向等属性，核心对象是TableRow。', '/table'),
+      'Table', '表格组件,用于展示表格的组件，可指定边线、列宽、文字方向等属性，核心对象是TableRow。', 'table'),
   ContainerInfo('PerformanceOverlay',
-      '性能浮层，可以非常方便地开启性能检测的两个柱图，方便查看刷新界面时帧率的变化情况。', '/performance_overlay'),
+      '性能浮层，可以非常方便地开启性能检测的两个柱图，方便查看刷新界面时帧率的变化情况。', 'performance_overlay'),
   ContainerInfo(
-      'ErrorWidget', '错误组件，用于显示错误信息的组件，红底黄字，开发过程中经常看到。', '/error_widget'),
+      'ErrorWidget', '错误组件，用于显示错误信息的组件，红底黄字，开发过程中经常看到。', 'error_widget'),
 ];

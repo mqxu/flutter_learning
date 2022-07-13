@@ -38,6 +38,7 @@ class MyApp extends StatelessWidget {
         Locale('zh', 'CH'),
         Locale('en', 'US'),
       ],
+      themeMode: ThemeMode.light,
       debugShowCheckedModeBanner: false,
       title: 'Flutter学习',
       routes: routes,

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_demo/common/data.dart';
-import 'package:flutter_demo/widget/custom/widget_container.dart';
+import 'package:flutter_demo/widget/custom/custom_list_item.dart';
 
 class MultiRenderWidgetPage extends StatelessWidget {
   const MultiRenderWidgetPage({Key? key}) : super(key: key);
@@ -13,7 +13,14 @@ class MultiRenderWidgetPage extends StatelessWidget {
       child: ListView.builder(
         itemCount: multiRenderList.length,
         itemBuilder: (BuildContext context, int index) {
-          return WidgetContainer(multiRenderList[index]);
+          return Column(
+            children: [
+              const SizedBox(
+                height: 10,
+              ),
+              CustomListItem(multiRenderList[index]),
+            ],
+          );
         },
       ),
     );

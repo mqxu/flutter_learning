@@ -96,10 +96,10 @@ import 'package:flutter_demo/widget/stateless/visiblity_widget.dart';
 Map<String, Widget Function(BuildContext)> routes = {
   /// 底部导航
   '/index': (context) => const Index(),
-  '/category': (context) => const CategoryPage(),
-  '/favorite': (context) => const FavoritePage(),
-  '/sample': (context) => const SamplePage(),
-  '/add': (context) => const AddPage(),
+  'category': (context) => const CategoryPage(),
+  'favorite': (context) => const FavoritePage(),
+  'sample': (context) => const SamplePage(),
+  'add': (context) => const AddPage(),
 
   /// 无状态组件导航
   '/container': (context) => const ContainerWidget(),
@@ -180,30 +180,30 @@ Map<String, Widget Function(BuildContext)> routes = {
   '/selectable_text': (context) => const SelectableTextWidget(),
 
   /// 单渲染组件
-  '/clip': (context) => const ClipWidget(),
-  '/box': (context) => const BoxWidget(),
-  '/align_padding': (context) => const AlignPaddingWidget(),
-  '/custom_paint': (context) => const CustomPaintWidget(),
+  'clip': (context) => const ClipWidget(),
+  'box': (context) => const BoxWidget(),
+  'align_padding': (context) => const AlignPaddingWidget(),
+  'custom_paint': (context) => const CustomPaintWidget(),
 
   ///多渲染组件
-  '/flex': (context) => const FlexWidget(),
+  'flex': (context) => const FlexWidget(),
 
   ///可折叠组件
-  '/custom_scroll_view': (context) => const CustomScrollViewWidget(),
-  '/sliver_list': (context) => const SliverListWidget(),
+  'custom_scroll_view': (context) => const CustomScrollViewWidget(),
+  'sliver_list': (context) => const SliverListWidget(),
 
   ///可寄居组件
-  '/expanded': (context) => const ExpandedWidget(),
+  'expanded': (context) => const ExpandedWidget(),
 
   ///其他组件
-  '/table': (context) => const TableWidget(),
+  'table': (context) => const TableWidget(),
 
   /// 示例导航
-  '/demo_page': (context) => const DemoPae(),
-  '/plant_shop': (context) => const PlantShop(),
-  '/timeline': (context) => const TimelinePage(),
-  '/wallet': (context) => const WalletPage(),
-  '/lock': (context) => const LockPage(),
-  '/custom_scroll': (context) => const CustomScrollPage(),
-  '/login': (context) => const LoginPage(),
+  'demo_page': (context) => const DemoPae(),
+  'plant_shop': (context) => const PlantShop(),
+  'timeline': (context) => const TimelinePage(),
+  'wallet': (context) => const WalletPage(),
+  'lock': (context) => const LockPage(),
+  'custom_scroll': (context) => const CustomScrollPage(),
+  'login': (context) => const LoginPage(),
 };
