@@ -221,6 +221,30 @@ final singleRenderList = <ItemInfo>[
     const Color(0xFFa97bf7),
     4,
   ),
+  ItemInfo(
+    'LayoutBuilder',
+    '布局构造器，可以监测到父容器的区域大小，并根据父容器的尺寸信息完成定义布局，是一个非常实用的组件。',
+    'layout_builder',
+    const Color(0xFFe4d8f8),
+    const Color(0xFFa97bf7),
+    4,
+  ),
+  ItemInfo(
+    'OffStage',
+    '消失组件，可容纳一个子组件，可更改其消失与否。offstage属性为true表示隐藏。',
+    'offstage',
+    const Color(0xFFe4d8f8),
+    const Color(0xFFa97bf7),
+    4,
+  ),
+  ItemInfo(
+    'Opacity',
+    '透明度组件，可容纳一个子组件，将其透明度变为opacity值，取值在0-1之间。',
+    'opacity',
+    const Color(0xFFe4d8f8),
+    const Color(0xFFa97bf7),
+    4,
+  ),
 ];
 
 // 多渲染组件列表

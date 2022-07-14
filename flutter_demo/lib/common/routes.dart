@@ -21,6 +21,9 @@ import 'package:flutter_demo/widget/single/box_widget.dart';
 import 'package:flutter_demo/widget/single/clip_widget.dart';
 import 'package:flutter_demo/widget/single/color_filtered_widget.dart';
 import 'package:flutter_demo/widget/single/custom_paint_widget.dart';
+import 'package:flutter_demo/widget/single/layout_builder_widget.dart';
+import 'package:flutter_demo/widget/single/offstage_widget.dart';
+import 'package:flutter_demo/widget/single/opacity_widget.dart';
 import 'package:flutter_demo/widget/sliver/custom_scroll_view_widget.dart';
 import 'package:flutter_demo/widget/sliver/sliver_list_widget.dart';
 import 'package:flutter_demo/widget/stateful/Refresh_indicator_widget.dart';
@@ -188,6 +191,9 @@ Map<String, Widget Function(BuildContext)> routes = {
   'align_padding': (context) => const AlignPaddingWidget(),
   'custom_paint': (context) => const CustomPaintWidget(),
   'filtered': (context) => const ColorFilteredWidget(),
+  'layout_builder': (context) => const LayoutBuilderWidget(),
+  'offstage': (context) => const OffstageWidget(),
+  'opacity': (context) => const OpacityWidget(),
 
   ///多渲染组件
   'flex': (context) => const FlexWidget(),

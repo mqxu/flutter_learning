@@ -227,7 +227,7 @@ class FavoritePage extends StatelessWidget {
                       borderSide: BorderSide(color: Colors.red),
                     ),
                     child: const Text("UnderlineInputBorder"),
-                  )
+                  ),
                 ],
               )
             ],
