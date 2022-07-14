@@ -46,10 +46,10 @@ class _UploadPanelState extends State<UploadPanel> {
     'assets/images/draw_bg4.webp',
     'assets/images/base_draw.webp',
     'assets/images/wy_300x200.webp',
-    'assets/images/head_icon/icon_0.webp',
+    'assets/images/head_icon/me.jpg',
     'assets/images/head_icon/icon_1.webp',
     'assets/images/head_icon/icon_2.webp',
-    'assets/images/head_icon/icon_3.webp',
+    'assets/images/head_icon/icon_28.jpg',
   ];
 
   final double spacing = 8;

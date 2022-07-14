@@ -8,7 +8,7 @@ final List<SpecialColumnItem> data = [
     attentionCount: 188,
   ),
   SpecialColumnItem(
-    title: "FlutterUnit 周边",
+    title: "Flutter 周边",
     url: "assets/images/draw_bg4.webp",
     articleCount: 90,
     attentionCount: 128,
@@ -64,12 +64,6 @@ final List<SpecialColumnItem> data = [
   SpecialColumnItem(
     title: "Flutter 绘制集录",
     url: "assets/images/base_draw.webp",
-    articleCount: 90,
-    attentionCount: 128,
-  ),
-  SpecialColumnItem(
-    title: "Flutter 动画集录",
-    url: "assets/images/anim_draw.webp",
     articleCount: 90,
     attentionCount: 128,
   ),

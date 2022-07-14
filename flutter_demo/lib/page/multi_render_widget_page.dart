@@ -16,7 +16,7 @@ class MultiRenderWidgetPage extends StatelessWidget {
           return Column(
             children: [
               const SizedBox(
-                height: 10,
+                height: 15,
               ),
               CustomListItem(multiRenderList[index]),
             ],

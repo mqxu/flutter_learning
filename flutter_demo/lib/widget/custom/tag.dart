@@ -62,7 +62,7 @@ class _TagPaint extends CustomPainter {
     shadowPath.relativeLineTo(0, shadowHeight);
     shadowPath.relativeLineTo(shadowHeight * rate, 0);
     shadowPath.close();
-    canvas.drawPath(shadowPath, _paint..color = color.withAlpha(88));
+    canvas.drawPath(shadowPath, _paint..color = color.withOpacity(0.5));
   }
 
   @override

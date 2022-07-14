@@ -13,6 +13,7 @@ import 'package:flutter_demo/sample/timeline_page.dart';
 import 'package:flutter_demo/sample/wallet_page.dart';
 import 'package:flutter_demo/widget/liveaway/expanded_widget.dart';
 import 'package:flutter_demo/widget/multi/flex_widget.dart';
+import 'package:flutter_demo/widget/multi/flow_widget.dart';
 import 'package:flutter_demo/widget/other/table_widget.dart';
 import 'package:flutter_demo/widget/single/align_padding_widget.dart';
 import 'package:flutter_demo/widget/single/box_widget.dart';
@@ -187,6 +188,7 @@ Map<String, Widget Function(BuildContext)> routes = {
 
   ///多渲染组件
   'flex': (context) => const FlexWidget(),
+  'flow': (context) => const FlowWidget(),
 
   ///可折叠组件
   'custom_scroll_view': (context) => const CustomScrollViewWidget(),

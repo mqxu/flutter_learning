@@ -46,7 +46,7 @@ class ChatItem extends StatelessWidget {
           borderRadius: BorderRadius.circular(3),
           image: const DecorationImage(
             image: AssetImage(
-              'assets/images/head_icon/icon_0.webp',
+              'assets/images/head_icon/me.jpg',
             ),
             fit: BoxFit.cover,
           )),
@@ -64,8 +64,11 @@ class ChatItem extends StatelessWidget {
         padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 10),
         color: const Color(0xff96EC6D),
         child: const Text(
-          '兄弟们，准备问要钱买布局小册吧！',
-          style: TextStyle(color: Colors.black, fontSize: 15),
+          'hello，准备好学习 Flutter 布局了吗？',
+          style: TextStyle(
+            color: Colors.black,
+            fontSize: 15,
+          ),
         ),
       ),
     );

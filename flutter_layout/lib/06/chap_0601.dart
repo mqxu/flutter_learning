@@ -8,14 +8,18 @@ class Chap0601 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('01 掘金专栏列表的条目'),
+        title: const Text('01 掘金专栏列表'),
       ),
       body: ListView.separated(
-          itemBuilder: (_, index) => SpecialColumn(
-                item: data[index],
-              ),
-          separatorBuilder: (_, index) => const Divider(height: 1),
-          itemCount: data.length),
+        itemBuilder: (_, index) => SpecialColumn(
+          item: data[index],
+        ),
+        separatorBuilder: (_, index) => const Divider(
+          height: 2,
+          color: Colors.grey,
+        ),
+        itemCount: data.length,
+      ),
     );
   }
 }
@@ -41,7 +45,7 @@ class SpecialColumn extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 86,
+      height: 90,
       color: Colors.white,
       padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
       child: Row(

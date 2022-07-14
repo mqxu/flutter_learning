@@ -16,9 +16,15 @@ class Chap0603 extends StatelessWidget {
         children: [
           ChatItem(
             message: Message(
-                content: '兄弟们，准备要钱买布局小册吧！',
+              content: '22:01',
+              type: MessageType.time,
+            ),
+          ),
+          ChatItem(
+            message: Message(
+                content: 'hello，准备好学习 Flutter 布局了吗？',
                 type: MessageType.right,
-                imageUrl: 'assets/images/head_icon/icon_0.webp'),
+                imageUrl: 'assets/images/head_icon/me.jpg'),
           ),
           ChatItem(
             message: Message(
@@ -28,27 +34,39 @@ class Chap0603 extends StatelessWidget {
           ),
           ChatItem(
             message: Message(
-                content: '写好了?',
+                content: '准备好啦，随时可以开始~',
                 username: '风羽',
                 type: MessageType.left,
-                imageUrl: 'assets/images/head_icon/icon_2.webp'),
+                imageUrl: 'assets/images/head_icon/icon_8.jpg'),
           ),
           ChatItem(
             message: Message(content: '00:03', type: MessageType.time),
           ),
           ChatItem(
             message: Message(
-                content: 'shut up and take my money',
-                username: 'code',
+                content: 'good good study，day day up！',
+                username: 'coder',
                 type: MessageType.left,
                 imageUrl: 'assets/images/head_icon/icon_1.webp'),
           ),
           ChatItem(
             message: Message(
-                username: '帅威',
-                content: '昨天发工资，已经和要了小册钱',
+                username: '码农',
+                content: '布局太重要啦，是支撑界面呈现的根基。',
                 type: MessageType.left,
-                imageUrl: 'assets/images/head_icon/icon_3.webp'),
+                imageUrl: 'assets/images/head_icon/icon_28.jpg'),
+          ),
+          ChatItem(
+            message: Message(
+              content: '00:13',
+              type: MessageType.time,
+            ),
+          ),
+          ChatItem(
+            message: Message(
+                content: '加油，冲冲冲！！！',
+                type: MessageType.right,
+                imageUrl: 'assets/images/head_icon/me.jpg'),
           ),
         ],
       ),

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_demo/common/data.dart';
-import 'package:flutter_demo/widget/custom/widget_container.dart';
+import 'package:flutter_demo/widget/custom/custom_list_item.dart';
 
 class SliverWidgetPage extends StatelessWidget {
   const SliverWidgetPage({Key? key}) : super(key: key);
@@ -13,7 +13,14 @@ class SliverWidgetPage extends StatelessWidget {
       child: ListView.builder(
         itemCount: sliverList.length,
         itemBuilder: (BuildContext context, int index) {
-          return WidgetContainer(sliverList[index]);
+          return Column(
+            children: [
+              const SizedBox(
+                height: 15,
+              ),
+              CustomListItem(sliverList[index]),
+            ],
+          );
         },
       ),
     );
