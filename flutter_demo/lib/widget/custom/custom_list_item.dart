@@ -3,6 +3,7 @@ import 'package:flutter_demo/widget/custom/circle_text.dart';
 import 'package:flutter_demo/widget/custom/custom_shape_border.dart';
 import 'package:flutter_demo/widget/custom/tag.dart';
 
+// 自定义列表item
 // ignore: must_be_immutable
 class CustomListItem extends StatelessWidget {
   ItemInfo info;
@@ -18,12 +19,12 @@ class CustomListItem extends StatelessWidget {
       child: Stack(
         children: [
           Material(
-            color: info.foregroundColor.withAlpha(77),
             shape: CustomShapeBorder(
               color: info.foregroundColor,
             ),
             child: Container(
               height: 100,
+              color: info.backgroundColor,
               padding: const EdgeInsets.only(
                 top: 10,
                 left: 10,

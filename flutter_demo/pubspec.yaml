@@ -12,6 +12,7 @@ dependencies:
   flutter_localizations:
     sdk: flutter
   device_preview: ^1.1.0
+  flutter_custom_clippers: ^2.0.0
 
 
 dev_dependencies:

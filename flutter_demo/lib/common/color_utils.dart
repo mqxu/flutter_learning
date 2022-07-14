@@ -17,12 +17,6 @@ class ColorUtils {
     return Color.fromARGB(a, r, g, b); //生成argb模式的颜色
   }
 
-  /// 使用方法:
-  /// var color1=ColorUtils.parse("#33428A43");
-  /// var color2=ColorUtils.parse("33428A43");
-  /// var color3=ColorUtils.parse("#428A43");
-  ///var color4=ColorUtils.parse("428A43");
-  ///
   static Color parse(String code) {
     Color result = Colors.red;
     int value = 0;

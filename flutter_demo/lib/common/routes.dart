@@ -4,6 +4,7 @@ import 'package:flutter_demo/bottom/category_page.dart';
 import 'package:flutter_demo/bottom/favorite_page.dart';
 import 'package:flutter_demo/bottom/index.dart';
 import 'package:flutter_demo/bottom/sample_page.dart';
+import 'package:flutter_demo/sample/custom_clippers_page.dart';
 import 'package:flutter_demo/sample/custom_scroll_page.dart';
 import 'package:flutter_demo/sample/demo_page.dart';
 import 'package:flutter_demo/sample/lock_page.dart';
@@ -18,6 +19,7 @@ import 'package:flutter_demo/widget/other/table_widget.dart';
 import 'package:flutter_demo/widget/single/align_padding_widget.dart';
 import 'package:flutter_demo/widget/single/box_widget.dart';
 import 'package:flutter_demo/widget/single/clip_widget.dart';
+import 'package:flutter_demo/widget/single/color_filtered_widget.dart';
 import 'package:flutter_demo/widget/single/custom_paint_widget.dart';
 import 'package:flutter_demo/widget/sliver/custom_scroll_view_widget.dart';
 import 'package:flutter_demo/widget/sliver/sliver_list_widget.dart';
@@ -185,6 +187,7 @@ Map<String, Widget Function(BuildContext)> routes = {
   'box': (context) => const BoxWidget(),
   'align_padding': (context) => const AlignPaddingWidget(),
   'custom_paint': (context) => const CustomPaintWidget(),
+  'filtered': (context) => const ColorFilteredWidget(),
 
   ///多渲染组件
   'flex': (context) => const FlexWidget(),
@@ -202,6 +205,7 @@ Map<String, Widget Function(BuildContext)> routes = {
 
   /// 示例导航
   'demo_page': (context) => const DemoPae(),
+  'clippers': (context) => const CustomClippersPage(),
   'plant_shop': (context) => const PlantShop(),
   'timeline': (context) => const TimelinePage(),
   'wallet': (context) => const WalletPage(),

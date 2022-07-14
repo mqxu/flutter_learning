@@ -52,6 +52,13 @@ class _SamplePageState extends State<SamplePage> {
       Info(
         width: 400.0,
         height: 100.0,
+        color: Colors.blue.shade300,
+        title: '自定义Clippers',
+        url: 'clippers',
+      ),
+      Info(
+        width: 400.0,
+        height: 100.0,
         color: Colors.green,
         title: '植物小店展示样例',
         url: 'plant_shop',

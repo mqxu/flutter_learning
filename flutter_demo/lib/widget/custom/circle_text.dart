@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+// 自定义圆形文本组件
 class CircleText extends StatelessWidget {
   final String text; //文字内容
   final double size; //圆圈大小

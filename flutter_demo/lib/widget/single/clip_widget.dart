@@ -2,6 +2,9 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_demo/common/style.dart';
+import 'package:flutter_demo/widget/custom/coupon_shape_border.dart';
+import 'package:flutter_demo/widget/custom/custom_shape_border.dart';
+import 'package:flutter_demo/widget/custom/hole_shape_border.dart';
 
 class ClipWidget extends StatelessWidget {
   const ClipWidget({Key? key}) : super(key: key);
@@ -13,7 +16,12 @@ class ClipWidget extends StatelessWidget {
         title: const Text('Clip'),
       ),
       body: Container(
-        padding: const EdgeInsets.all(10),
+        padding: const EdgeInsets.only(
+          top: 10,
+          left: 10,
+          right: 10,
+          bottom: 40,
+        ),
         child: SingleChildScrollView(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -126,6 +134,86 @@ class ClipWidget extends StatelessWidget {
                   width: 150,
                   height: 100,
                   fit: BoxFit.cover,
+                ),
+              ),
+              const SizedBox(
+                height: 15,
+              ),
+              Container(
+                padding: const EdgeInsets.all(20.0),
+                decoration: BoxDecoration(
+                  border: Border.all(width: 2.0, color: Colors.indigo),
+                  borderRadius: const BorderRadius.all(Radius.circular(20.0)),
+                  image: const DecorationImage(
+                    image: AssetImage('images/bg.jpg'),
+                    fit: BoxFit.fill,
+                  ),
+                ),
+                child: Material(
+                  color: Colors.orangeAccent,
+                  shape: const HoleShapeBorder(
+                    size: 20,
+                    offset: Offset(0.05, 0.1),
+                  ),
+                  child: Container(
+                    height: 200,
+                  ),
+                ),
+              ),
+              const SizedBox(
+                height: 15,
+              ),
+              Material(
+                color: Colors.green.shade100,
+                shape: CustomShapeBorder(
+                  color: Colors.green.shade600,
+                ),
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Container(
+                    height: 120,
+                  ),
+                ),
+              ),
+              const SizedBox(
+                height: 15,
+              ),
+              SizedBox(
+                width: MediaQuery.of(context).size.width,
+                height: 200,
+                child: ClipPath(
+                  clipper: const ShapeBorderClipper(
+                    shape: CouponShapeBorder(),
+                  ),
+                  child: Container(
+                    color: Colors.pink.shade400,
+                    child: Row(
+                      children: const <Widget>[
+                        Expanded(
+                          flex: 3,
+                          child: Center(
+                            child: Text(
+                              '￥200 优惠券',
+                              style: titleLightStyle,
+                            ),
+                          ),
+                        ),
+                        Expanded(
+                          flex: 1,
+                          child: Center(
+                            child: Text(
+                              '立即领取',
+                              style: descLightStyle,
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  // child: Image.asset(
+                  //   'images/bg.jpg',
+                  //   fit: BoxFit.cover,
+                  // ),
                 ),
               ),
             ],
