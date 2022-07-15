@@ -53,7 +53,7 @@ class FlowWidget extends StatelessWidget {
 
 class CircleFlow extends StatelessWidget {
   final data = List.generate(16,
-      (index) => index.isEven ? "images/avatar7.jpg" : "images/avatar9.jpg");
+      (index) => index.isEven ? "images/avatar2.jpg" : "images/avatar4.jpg");
 
   CircleFlow({Key? key}) : super(key: key);
 
@@ -100,7 +100,7 @@ class _CircleFlowDelegate extends FlowDelegate {
 
 class BurstFlow extends StatefulWidget {
   static final data = List.generate(
-      16, (index) => index.isEven ? "images/avatar.jpg" : "images/avatar7.jpg");
+      16, (index) => index.isEven ? "images/avatar.jpg" : "images/avatar2.jpg");
   static final show = Container(
       width: 300,
       height: 300,

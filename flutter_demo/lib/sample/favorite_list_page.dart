@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class DemoPae extends StatefulWidget {
-  const DemoPae({Key? key}) : super(key: key);
+class FavoriteListPage extends StatefulWidget {
+  const FavoriteListPage({Key? key}) : super(key: key);
 
   @override
-  State<DemoPae> createState() => _DemoPaeState();
+  State<FavoriteListPage> createState() => _FavoriteListPageState();
 }
 
-class _DemoPaeState extends State<DemoPae> {
+class _FavoriteListPageState extends State<FavoriteListPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_demo/sample/juejin_list_item.dart';
 import 'package:flutter_demo/widget/custom/custom_list_item.dart';
 import 'package:flutter_demo/widget/custom/widget_container.dart';
 
@@ -524,5 +525,74 @@ final otherList = <ItemInfo>[
     const Color(0xfff6dce4),
     const Color(0xffee5a8a),
     3,
+  ),
+];
+
+final List<SpecialColumnItem> listData = [
+  SpecialColumnItem(
+    title: "Flutter 基础",
+    url: "images/draw_bg3.webp",
+    articleCount: 97,
+    attentionCount: 188,
+  ),
+  SpecialColumnItem(
+    title: "Flutter 周边",
+    url: "images/draw_bg4.webp",
+    articleCount: 90,
+    attentionCount: 128,
+  ),
+  SpecialColumnItem(
+    title: "Flutter 绘制集录",
+    url: "images/base_draw.webp",
+    articleCount: 29,
+    attentionCount: 118,
+  ),
+  SpecialColumnItem(
+    title: "Flutter 动画集录",
+    url: "images/anim_draw.webp",
+    articleCount: 34,
+    attentionCount: 18,
+  ),
+  SpecialColumnItem(
+    title: "Flutter 玩转正则",
+    url: "images/draw_bg3.webp",
+    articleCount: 7,
+    attentionCount: 88,
+  ),
+  SpecialColumnItem(
+    title: "Rust 学习指南",
+    url: "images/draw_bg4.webp",
+    articleCount: 90,
+    attentionCount: 228,
+  ),
+  SpecialColumnItem(
+    title: "Vue 学习指南",
+    url: "images/base_draw.webp",
+    articleCount: 90,
+    attentionCount: 128,
+  ),
+  SpecialColumnItem(
+    title: "前端绘制宝典",
+    url: "images/anim_draw.webp",
+    articleCount: 19,
+    attentionCount: 1228,
+  ),
+  SpecialColumnItem(
+    title: "Flutter 基础",
+    url: "images/draw_bg3.webp",
+    articleCount: 97,
+    attentionCount: 188,
+  ),
+  SpecialColumnItem(
+    title: "FlutterUnit 周边",
+    url: "images/draw_bg4.webp",
+    articleCount: 90,
+    attentionCount: 128,
+  ),
+  SpecialColumnItem(
+    title: "Flutter 绘制集录",
+    url: "images/base_draw.webp",
+    articleCount: 90,
+    attentionCount: 128,
   ),
 ];

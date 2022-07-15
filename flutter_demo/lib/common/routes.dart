@@ -4,13 +4,17 @@ import 'package:flutter_demo/bottom/category_page.dart';
 import 'package:flutter_demo/bottom/favorite_page.dart';
 import 'package:flutter_demo/bottom/index.dart';
 import 'package:flutter_demo/bottom/sample_page.dart';
+import 'package:flutter_demo/sample/chat_list.dart';
 import 'package:flutter_demo/sample/custom_clippers_page.dart';
 import 'package:flutter_demo/sample/custom_scroll_page.dart';
-import 'package:flutter_demo/sample/demo_page.dart';
+import 'package:flutter_demo/sample/favorite_list_page.dart';
+import 'package:flutter_demo/sample/juejin_list_item.dart';
 import 'package:flutter_demo/sample/lock_page.dart';
 import 'package:flutter_demo/sample/login_page.dart';
 import 'package:flutter_demo/sample/plant_shop.dart';
+import 'package:flutter_demo/sample/single_chat.dart';
 import 'package:flutter_demo/sample/timeline_page.dart';
+import 'package:flutter_demo/sample/upload_page.dart';
 import 'package:flutter_demo/sample/wallet_page.dart';
 import 'package:flutter_demo/widget/liveaway/expanded_widget.dart';
 import 'package:flutter_demo/widget/multi/flex_widget.dart';
@@ -210,7 +214,11 @@ Map<String, Widget Function(BuildContext)> routes = {
   'table': (context) => const TableWidget(),
 
   /// 示例导航
-  'demo_page': (context) => const DemoPae(),
+  'juejin_list_item': (context) => const JuejinListItem(),
+  'single_chat': (context) => const SingleChat(),
+  'chat_list': (context) => const ChatList(),
+  'upload_page': (context) => const UploadPage(),
+  'favorite_page': (context) => const FavoriteListPage(),
   'clippers': (context) => const CustomClippersPage(),
   'plant_shop': (context) => const PlantShop(),
   'timeline': (context) => const TimelinePage(),
