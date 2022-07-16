@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:flutter_demo/common/style.dart';
 import 'package:flutter_demo/widget/sliver/custom/common_sliver_build.dart';
 
-class SliverListWidget extends StatelessWidget {
-  const SliverListWidget({Key? key}) : super(key: key);
+class SliverToBoxAdapterWidget extends StatelessWidget {
+  const SliverToBoxAdapterWidget({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('SliverList'),
+        title: const Text('SliverToBoxAdapter'),
       ),
       body: Container(
         padding: const EdgeInsets.all(10),
@@ -18,7 +18,7 @@ class SliverListWidget extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
               const Text(
-                'Sliver列表',
+                'Sliver适配器',
                 style: titleStyle,
               ),
               Container(
@@ -26,19 +26,17 @@ class SliverListWidget extends StatelessWidget {
                   vertical: 10.0,
                 ),
                 child: const Text(
-                  'Sliver家族的列表组件，通过指定delegate构造子组件，通常用于CustomScrollView中。',
+                  '可以容纳一个普通的组件，并将其转化为Sliver家族组件的适配器。',
                   style: descStyle,
                 ),
               ),
               SizedBox(
-                height: 500,
+                height: 400,
                 child: CustomScrollView(
-                  anchor: 0,
-                  scrollDirection: Axis.vertical,
-                  reverse: false,
                   slivers: <Widget>[
                     CommonSliverBuild.buildSliverAppBar(),
-                    CommonSliverBuild.buildSliverList(),
+                    CommonSliverBuild.buildCommonWidget(),
+                    CommonSliverBuild.buildSliverList()
                   ],
                 ),
               ),

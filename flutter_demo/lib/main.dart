@@ -47,6 +47,29 @@ class MyApp extends StatelessWidget {
       darkTheme: ThemeData.dark(),
       theme: ThemeData(
         primarySwatch: Colors.indigo,
+        elevatedButtonTheme: ElevatedButtonThemeData(
+          style: ButtonStyle(
+            backgroundColor: MaterialStateProperty.resolveWith(
+              (states) {
+                return const Color(0xff00a89b);
+              },
+            ),
+            foregroundColor: MaterialStateProperty.resolveWith(
+              (states) {
+                return const Color(0xffffffff);
+              },
+            ),
+            shape: MaterialStateProperty.resolveWith<OutlinedBorder>(
+              (states) {
+                return const RoundedRectangleBorder(
+                  borderRadius: BorderRadius.all(
+                    Radius.circular(50),
+                  ),
+                );
+              },
+            ),
+          ),
+        ),
       ),
       home: const Index(),
     );
